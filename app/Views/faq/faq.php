@@ -34,17 +34,16 @@ Source: vapingpost.com</p>
 <p>Il s’agit des mods qui sont des modèles ayant une autonomie de batterie importante pour vapoter plus longtemps et une puissance élevée pour produire beaucoup de vapeur. Ce matériel n’est pas destiné à un public débutant car il demande de solides connaissances sur les résistances et l’utilisation des accus. Il existe les mods boxs et les mods tubulaires. Les mods boxs de taille mini sont plus adaptés au vapoteur débutant.</p>
 <h3>Est-ce que je peux utiliser ma cigarette électronique n'importe où ?</h3>
 <p>Il est interdit depuis janvier 2016 de vapoter sur les lieux de travail et certains endroits publics dont le règlement le stipule (transports en commun par exemple). La législation est encore assez vague à ce sujet.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php $this->stop('main_content') ?>
+
+
+
+
+
+
+
+
+
+
+
+
