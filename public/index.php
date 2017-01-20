@@ -13,4 +13,4 @@ require '../W/globals.php';
 $app = new W\App($w_routes, $w_config);
 
 //exécute l'appli
-$app->run();
+$app -> run();
