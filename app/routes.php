@@ -6,6 +6,7 @@ $w_routes = array(
     ['GET', '/article/ecrire/', 'Article#ecrire', 'article_ecrire'],
     ['GET', '/article/niveau/', 'Article#niveau', 'article_niveau'],
     ['GET', '/article/faq/', 'Article#faq', 'article_faq'],
+    ['GET', '/article/mentions/', 'Article#mentions', 'article_mentions'],
 
 
     ['GET', '/user/', 'User#home', 'user_home'],
