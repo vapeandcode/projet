@@ -18,7 +18,7 @@ class UserController extends Controller
     }
 
     public function loginSubmit(){
-        $tintin = new LoginModel();
+     /*   $tintin = new LoginModel();
         $email = $_POST['email'];
 
         $query = $tintin ->loginubmit($email);
@@ -27,8 +27,14 @@ class UserController extends Controller
             $this->show('user/loginSuccess');
         } elseif ($query === 0){
             $this->show('user/loginFail');
+        }*/
+        $userLog = new AuthentificationModel();
+
+        // SI L'UTILISATEUR EST CONNECTE IL EST ENVOYE VERS LA PAGE SUCCES
+        if(!is_null($userLog ->getLoggedUser()))
+        {
+            $this->show('user/loginSuccess');
         }
-    }
 
     public function logout()
     {
