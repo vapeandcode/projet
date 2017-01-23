@@ -1,6 +1,12 @@
 <?php $this->layout('layout', ['title' => 'Administration']);
 $this->start('main_content');
 
+/**
+ * Created by PhpStorm.
+ * User: PEP
+ */
+
+
 ?>
 <h2>Administration</h2>
 <p>
@@ -29,11 +35,11 @@ $this->start('main_content');
             <td><?php echo $listeUser[$i]['email']?></td>
             <td><?php echo $listeUser[$i]['role']?></td>
             <td>
-                <form class="FormBtn" action="form.php" method="post">
+                <form class="FormBtn" action="<?= $this->url('update_user_find') ?>" method="post">
                     <input type="hidden" name="userId" value="<?php echo $listeUser[$i]['id'] ?>">
                     <button type="submit" name="userUpdate" class="btn btn-warning"><i class="fa fa-edit"></i></button>
                 </form>
-                <form class="FormBtn" action="delete.php" method="post">
+                <form class="FormBtn" action="<?= $this->url('delete_user') ?>" method="post">
                     <input type="hidden" name="userId" value="<?php echo $listeUser[$i]['id'] ?>">
                     <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>
                 </form>
@@ -44,4 +50,5 @@ $this->start('main_content');
 </table>
 <hr>
 <h2>Gestions articles</h2>
+
 <?php $this->stop('main_content') ?>
