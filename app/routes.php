@@ -16,5 +16,6 @@ $w_routes = array(
     ['GET', '/user/logout/', 'User#logout', 'user_logout'],
     ['GET', '/user/inscription/', 'User#inscription', 'user_inscription'],
 
-    ['GET|POST', '/contact/', 'Contact#home', 'contact_home']
+    ['GET|POST', '/contact/', 'Contact#home', 'contact_home'],
+    ['GET|POST', '/admin/', 'Admin#admin', 'admin_users']
 );
