@@ -14,5 +14,7 @@ $w_routes = array(
     ['GET', '/user/login/', 'User#loginFrom', 'user_loginForm'],
     ['GET|POST', '/user/logintest/', 'User#loginSubmit', 'user_loginSubmit'],
     ['GET', '/user/logout/', 'User#logout', 'user_logout'],
-    ['GET', '/user/inscription/', 'User#inscription', 'user_inscription']
+    ['GET', '/user/inscription/', 'User#inscription', 'user_inscription'],
+
+    ['GET|POST', '/contact/', 'User#contact', 'user_contact']
 );
