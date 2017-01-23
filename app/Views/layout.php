@@ -1,17 +1,22 @@
-<?php < !DOCTYPEhtml > < htmllang = "fr" > < head > < metacharset = "UTF-8" > < metaname = "viewport"content = "width=device-width, initial-scale=1.0" > < title > < ? = $this->e($title) ?></title>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><?= $this->e($title) ?></title>
                     <!-- LIB -->
     <!-- jQuery -->
-    <script src="<?php echo $this->assetUrl('libs/jquery.js') ?>" charset="utf-8"></script>
+    <script src="<?= $this->assetUrl('libs/jquery.js') ?>" charset="utf-8"></script>
 
     <!-- BootStrap -->
-    <script src="<?php echo $this->assetUrl('libs/bootstrap/js/bootstrap.js') ?>" charset="utf-8"></script>
-    <link rel="stylesheet" href="<?php echo $this->assetUrl('libs/bootstrap/css/bootstrap.css') ?>">
+    <script src="<?= $this->assetUrl('libs/bootstrap/js/bootstrap.js') ?>" charset="utf-8"></script>
+    <link rel="stylesheet" href="<?= $this->assetUrl('libs/bootstrap/css/bootstrap.css') ?>">
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="<?php echo $this->assetUrl('libs/font-awesome/css/font-awesome.css') ?>">
+    <link rel="stylesheet" href="<?= $this->assetUrl('libs/font-awesome/css/font-awesome.css') ?>">
 
 
-	<link rel="stylesheet" href="<?php echo $this->assetUrl('css/style.css') ?>">
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
 
 </head>
 <body>
@@ -42,14 +47,14 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
             <div class="navbar-header">
-            <a class="navbar-brand" href="#">VapnCode</a>
+                <a class="navbar-brand" href="#">VapnCode</a>
             </div>
             <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="pages/ecig.php">Connectez vous</a></li>
-            <li><a href="#">s'incrire</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="pages/ecig.php">Connectez vous</a></li>
+                <li><a href="#">s'incrire</a></li>
             </ul>
-            </div>
+           </div>
         </nav>
                        
                    
@@ -59,7 +64,7 @@
                 <span>Reviews</span>
                 <span>Conseils</span>
             </div>
-            <img src="<?php echo $this->assetUrl('img/logo.png') ?>" alt="image Logo Vap n Code">
+            <img src="<?= $this->assetUrl('img/logo.png') ?>" alt="image Logo Vap n Code">
             <div class="headerKeyRight">
                 <span>Infos</span>
                 <span>Produits</span>
@@ -98,23 +103,23 @@
             </div>
         </header>
 		<section>
-			<?php echo $this->section('main_content') ?>
+			<?= $this->section('main_content') ?>
 		</section>
 
         <footer>
             <h2>Nos réseaux sociaux</h2>
             <a href="https://twitter.com/?lang=fr">
-                <img class="social" src="<?php echo $this->assetUrl('img/twitter.png') ?>" alt="Logo Twitter">
+                <img class="social" src="<?= $this->assetUrl('img/twitter.png') ?>" alt="Logo Twitter">
             </a>
             <a href="https://www.facebook.com/">
-                <img class="social" src="<?php echo $this->assetUrl('img/facebook.png') ?>" alt="Logo Facebook">
+                <img class="social" src="<?= $this->assetUrl('img/facebook.png') ?>" alt="Logo Facebook">
             </a>
-            <br />
+            <br>
             <!-- <h3>Suivez / Aimez</h3> -->
             <a href="https://www.youtube.com/?gl=FR&hl=fr">
-                <img class="social" src="<?php echo $this->assetUrl('img/youtube.png') ?>" alt="Logo Youtube">
+                <img class="social" src="<?= $this->assetUrl('img/youtube.png') ?>" alt="Logo Youtube">
                 <a href="https://www.instagram.com/">
-                    <img class="social" src="<?php echo $this->assetUrl('img/instagram.png') ?>" alt="Logo Instagram">
+                    <img class="social" src="<?= $this->assetUrl('img/instagram.png') ?>" alt="Logo Instagram">
                 </a>
             </a>
             <!-- <h3>Regardez / Admirez</h3> -->
