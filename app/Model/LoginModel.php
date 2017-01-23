@@ -10,37 +10,25 @@ class LoginModel extends UsersModel
 {
     public function login(array $data)
     {
-       /* //var_dump($_POST);
-            $query = $this -> getUserByUsernameOrEmail($email);
-            var_dump($query['id']);
-            if (isset($query['id']))
-            {
-
-                $_SESSION['pseudo'] = $query['username'];
-                $_SESSION['role'] = $query['role'];
-                var_dump($_SESSION);
-                return 1;
-            }
-            else {
-                session_unset();
-                return 0;
-            }*/
-
        // SI LES CHAMPS SONT REMPLIS
         if(!empty($data['username']) && !empty($data['password']))
         {
             $userLogin = new AuthentificationModel();
 
             // SI LES IDENTIFIANTS SONT PRESENTS EN BDD
+            //var_dump($userLogin->isValidLoginInfo("tatatiti", "toto"));
             if($userLogin->isValidLoginInfo($data['username'], $data['password']) != 0)
             {
                 $userConnection = new UsersModel();
+               // var_dump($userConnection);
 
                 // SELECTIONNE L'UTILISATEUR PAR SON PSEUDO
                 $userData = $userConnection->getUserByUsernameOrEmail($data['username']);
 
                 // CONNECTION DE L'UTILISATEUR
                 $userLogin->logUserIn($userData);
+
+                return "login";
             }
             else
             {
