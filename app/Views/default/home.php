@@ -1,7 +1,7 @@
 <?php $this->layout('layout', ['title' => 'Accueil']) ?>
 
 <?php $this->start('main_content') ?>
-<<<<<<< HEAD
+
 	<h4>Qui sommes nous ?</h4>
       <p>
         Code N Vape est un projet destiné a vous accompagner dans le monde merveilleux de la vape.
@@ -47,7 +47,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-=======
+
 	<h2>Let's code.</h2>
 	<p>Vous avez atteint la page d'accueil. Bravo.</p>
 	<p>Et maintenant, RTFM dans <strong><a href="../docs/tuto/" title="Documentation de W">docs/tuto</a></strong>.</p>
@@ -56,5 +56,5 @@
         <li><a href="<?= $this->url('admin_users') ?>">Ce connecter</a></li>
         <li></li>
     </ul>
->>>>>>> 0b774b463523b42eed47f8abe1f705359db432eb
+
 <?php $this->stop('main_content') ?>
