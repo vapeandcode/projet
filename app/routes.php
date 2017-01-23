@@ -10,7 +10,7 @@ $w_routes = array(
 
     ['GET', '/user/', 'User#home', 'user_home'],
     ['GET', '/user/login/', 'User#loginFrom', 'user_loginForm'],
-    ['GET|POST', '/user/logintest/', 'User#loginSubmit', 'user_loginSubmit'],
+    ['POST', '/user/login/', 'User#loginSubmit', 'user_loginSubmit'],
     ['GET', '/user/logout/', 'User#logout', 'user_logout'],
     ['GET', '/user/inscription/', 'User#inscription', 'user_inscription']
 );
