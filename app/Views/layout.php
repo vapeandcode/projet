@@ -44,33 +44,25 @@
 <!--            </div>-->
 <!--        </header>-->
         <!-- MENU FADE IN/OUT -->
-        <header class="searchNav navbar-default bs-docs-nav">
-            <div class="container">
-                <div class="navbar-header">
-                    <span class="navbar-brand">
-                        <form role="search">
-                            <div class="form-group">
-                                <input type="text"  placeholder="Search">
-                                <button type="submit" ><i class="fa fa-search" aria-hidden="true"></i></button>
-                            </div>
-                        </form>
-                    </span>
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                        <i class="fa fa-bars fa-2" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li>
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">VapnCode</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li>
                             <a href="pages/ecig.php">Connectez vous</a>
                         </li>
                         <li>
                             <a href="#">s'incrire</a>
                         </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+      
+    </ul>
+  </div>
+</nav>
+                       
+                   
         <!-- HEADER LOGO -->
         <header class="headPage">
             <div class="headerKeyLeft">
