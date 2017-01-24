@@ -23,4 +23,5 @@ $w_routes = array(
     ['GET|POST', '/admin/update_user', 'Admin#updateFindUser', 'update_user_find'],
     ['GET|POST', '/admin/updateUser', 'Admin#updateUser', 'update_user']
 
+
 );
