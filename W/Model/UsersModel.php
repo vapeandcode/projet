@@ -37,7 +37,9 @@ class UsersModel extends Model
 		$sth = $dbh->prepare($sql);
 		$sth->bindValue(':username', $usernameOrEmail);
 		$sth->bindValue(':email', $usernameOrEmail);
-		
+
+
+
 		if($sth->execute()){
 			$foundUser = $sth->fetch();
 			if($foundUser){

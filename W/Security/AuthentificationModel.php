@@ -22,9 +22,12 @@ class AuthentificationModel
 		$usersModel = new UsersModel();
 		$usernameOrEmail = strip_tags(trim($usernameOrEmail));
 		$foundUser = $usersModel->getUserByUsernameOrEmail($usernameOrEmail);
+
 		if(!$foundUser){
 			return 0;
 		}
+
+		var_dump(password_verify($plainPassword, $foundUser[$app->getConfig('security_password_property')]));
 
 		if(password_verify($plainPassword, $foundUser[$app->getConfig('security_password_property')])){
 			return (int) $foundUser[$app->getConfig('security_id_property')];
