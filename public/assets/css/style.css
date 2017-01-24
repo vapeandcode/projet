@@ -10,11 +10,13 @@ html {
 
 body {
   margin: 0;
-  background-image: url(science.png);
-  background-color: rgb(42, 42, 42);
   color: white;
   font-family: sans-serif;
+  background-image: url(science.png);
 }
+  
+
+
 
 h1,
 h2,
