@@ -53,11 +53,11 @@ class App
 			'db_host' => 'localhost',						//hôte (ip, domaine) de la bdd
 		    'db_user' => 'root',							//nom d'utilisateur pour la bdd
 		    'db_pass' => '',								//mot de passe de la bdd
-		    'db_name' => 'frameworkw',								//nom de la bdd
+		    'db_name' => 'vnc',								//nom de la bdd
 		    'db_table_prefix' => '',						//préfixe ajouté aux noms de table
 
 			//authentification, autorisation
-			'security_user_table' => 'w_users',				//nom de la table contenant les infos des utilisateurs
+			'security_user_table' => 'users',				//nom de la table contenant les infos des utilisateurs
 			'security_id_property' => 'id',					//nom de la colonne pour la clef primaire
 			'security_username_property' => 'username',		//nom de la colonne pour le "pseudo"
 			'security_email_property' => 'email',			//nom de la colonne pour l'"email"

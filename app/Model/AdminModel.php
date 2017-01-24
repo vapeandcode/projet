@@ -22,7 +22,7 @@ class AdminModel extends Model
     public function adminUsers()
     {
     //Definie la table w_users pour la method findAll().
-        $this->setTable('w_users');
+        $this->setTable('users');
         $query = $this->findAll();
     //On recupere le result du findAll().
         return $query;
@@ -37,7 +37,7 @@ class AdminModel extends Model
     public function adminDelete($id)
     {
     // Definie la table w_users pour la method findAll().
-        $this->setTable('w_users');
+        $this->setTable('users');
         $query = $this->delete($id);
         if ($query = false) {
             echo "Une erreur est survenur lors de la suppression.";
@@ -55,7 +55,7 @@ class AdminModel extends Model
     // Method qui permet de recuperer un utilisateur par son ID pour pouvoir l'UPDATE
     public function adminFindUpdate($id)
     {
-        $this->setTable('w_users');
+        $this->setTable('users');
         $query = $this->find($id);
         return $query;
     }
@@ -63,8 +63,21 @@ class AdminModel extends Model
     // Method qui permet de mettre a jour l'utisateur
     public function adminUpdate($data, $id)
     {
-        $this->setTable('w_users');
+        $this->setTable('users');
         $query = $this->update($data, $id, $stripTags = true);
+        return $query;
+    }
+
+    /*********************************************************************
+     *                METHOD POUR AJOUT ARTICLE
+     *
+     ********************************************************************/
+
+    // Method qui permet d'ajouter un article
+    public function adminAddArticle($data)
+    {
+        $this->setTable('article');
+        $query = $this -> insert($data, $stripTags = true);
         return $query;
     }
 }

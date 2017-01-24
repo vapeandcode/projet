@@ -50,5 +50,26 @@ $this->start('main_content');
 </table>
 <hr>
 <h2>Gestions articles</h2>
-
+<h2>Ajouter un article</h2>
+<!-- FORMULAIRE QUI RENVOIE VERS LA PAGE ADDARTICLE -->
+<form id="addArticle" action="<?= $this->url('add_article') ?>" method="post">
+    <p>Titre de l'article : <input type="text" name="title" value=""></p>
+    <p>Image(nom.extension) de l'article : <input type="text" name="description" value=""></p>
+    <p>Image schema (nom.extension)(eCiq seulement) de l'article : <input type="text" name="picture" value=""></p>
+    <p>Image schema (nom.extension)(eCiq seulement) de l'article : <input type="text" name="schema" value=""></p>
+    <p>Lien source/video/... : <input type="text" name="link" value=""></p>
+    <p>
+        Categorie de l'article :
+        <select name="type_id" form="addArticle">
+            <option value="1">eCig - Debutant</option>
+            <option value="2">eCig - Intermediaire</option>
+            <option value="3">eCig - Expert</option>
+            <option value="4">eLiquid - Menthol</option>
+            <option value="5">eLiquid - Tabac</option>
+            <option value="6">eLiquid - Gourmand</option>
+            <option value="7">eLiquid - Fruit</option>
+        </select>
+    </p>
+    <p><input type="submit" name="submit" value="Envoyer"></p>
+</form>
 <?php $this->stop('main_content') ?>

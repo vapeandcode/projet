@@ -21,7 +21,10 @@ $w_routes = array(
     ['GET|POST', '/admin/', 'Admin#admin', 'admin_users'],
     ['GET|POST', '/admin/delete_user', 'Admin#deleteUser', 'delete_user'],
     ['GET|POST', '/admin/update_user', 'Admin#updateFindUser', 'update_user_find'],
-    ['GET|POST', '/admin/updateUser', 'Admin#updateUser', 'update_user']
+    ['GET|POST', '/admin/updateUser', 'Admin#updateUser', 'update_user'],
+
+    ['GET|POST', '/admin/add_article', 'Admin#addArticle', 'add_article'],
+
 
 
 );
