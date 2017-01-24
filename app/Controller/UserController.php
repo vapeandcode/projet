@@ -2,8 +2,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
-use \Model\LoginModel;
-use \W\Security\AuthentificationModel;
+use Model\LoginModel;
 
 
 class UserController extends Controller

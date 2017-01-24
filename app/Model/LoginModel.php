@@ -2,7 +2,6 @@
 namespace Model;
 
 use \W\Model\UsersModel;
-use \W\Model\ConnectionModel;
 use \W\Security\AuthentificationModel;
 
 //class LoginModel extends \W\Model\Model
@@ -19,8 +18,9 @@ class LoginModel extends UsersModel
             //var_dump($userLogin->isValidLoginInfo("tatatiti", "toto"));
             if($userLogin->isValidLoginInfo($data['username'], $data['password']) != 0)
             {
+                var_dump($userConnection);
                 $userConnection = new UsersModel();
-               // var_dump($userConnection);
+
 
                 // SELECTIONNE L'UTILISATEUR PAR SON PSEUDO
                 $userData = $userConnection->getUserByUsernameOrEmail($data['username']);
