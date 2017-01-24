@@ -254,11 +254,11 @@
     <footer class="footer text-center">
     </footer>
     <!-- Scripts -->
-    <script src="assets/js/jquery-1.12.3.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="public/assets2/js/jquery-1.12.3.min.js"></script>
+    <script src="public/assets2/js/bootstrap.min.js"></script>
+    <script src="public/assets2/js/jquery.magnific-popup.min.js"></script>
+    <script src="public/assets2/js/owl.carousel.min.js"></script>
+    <script src="public/assets2/js/script.js"></script>
 </body>
 
 </html>
