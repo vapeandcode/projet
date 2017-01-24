@@ -13,19 +13,39 @@ use \Model\AdminModel;
 
 class AdminController extends Controller
 {
+    /*********************************************************************
+     *                METHOD POUR AFFICHAGE UTILISATEURS
+     *
+     ********************************************************************/
+
     public function admin()
     {
         $query = new AdminModel();
         $result = $query ->adminUsers();
+        // On envoi le $result dans la vue afin de pouvoir l'afficher.
         $this->show('admin/admin', ['listeUser' => $result]);
     }
+
+    /*********************************************************************
+     *                METHOD POUR DELETE LES UTILISATEURS
+     *
+     ********************************************************************/
 
     public function deleteUser()
     {
         $query = new AdminModel();
-        $query ->adminDelete($_POST['userId']);
-        $this ->admin();
+        $result = $query ->adminDelete($_POST['userId']);
+        if ($result == true)
+        {
+            // On renvoi le METHOD admin() pour re-afficher la page avec la liste des utilisateur
+            $this->admin();
+        }
     }
+
+    /*********************************************************************
+     *                METHOD POUR UPDATE LES UTILISATEURS
+     *
+     ********************************************************************/
 
     public function updateFindUser()
     {
@@ -36,8 +56,19 @@ class AdminController extends Controller
 
     public function updateUser()
     {
-//        A FINIRRRR
+        $data = array(
+            'username' => $_POST['username'],
+            'role' => $_POST['role'],
+            'email' => $_POST['email']
+        );
         $query = new AdminModel();
-        $result = $query -> adminUpdate();
+        $result = $query -> adminUpdate($data, $_POST['userId']);
+        if ($result)
+        {
+            $this ->admin();
+        } else
+            {
+                $this->show('w_errors/404');
+            }
     }
 }
