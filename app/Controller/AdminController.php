@@ -14,7 +14,7 @@ use \Model\AdminModel;
 class AdminController extends Controller
 {
     /*********************************************************************
-     *                METHOD POUR AFFICHAGE UTILISATEURS
+     *                AFFICHAGE UTILISATEURS
      *
      ********************************************************************/
 
@@ -27,7 +27,7 @@ class AdminController extends Controller
     }
 
     /*********************************************************************
-     *                METHOD POUR DELETE LES UTILISATEURS
+     *                DELETE LES UTILISATEURS
      *
      ********************************************************************/
 
@@ -43,7 +43,7 @@ class AdminController extends Controller
     }
 
     /*********************************************************************
-     *                METHOD POUR UPDATE LES UTILISATEURS
+     *                UPDATE LES UTILISATEURS
      *
      ********************************************************************/
 
@@ -70,5 +70,39 @@ class AdminController extends Controller
             {
                 $this->show('w_errors/404');
             }
+    }
+
+    /*********************************************************************
+     *                AJOUT ARTICLE
+     *
+     ********************************************************************/
+
+    public function addArticle()
+    {
+        if (!isset($_POST['link'])) {
+            $link = '';
+        } else {
+            $link = $_POST['link'];
+        }
+
+        $data = array(
+            'title' => $_POST['title'],
+            'description' => $_POST['description'],
+            'picture' => $_POST['picture'],
+            'schema' => $_POST['schema'],
+            'link' => $link,
+            'type_id' => $_POST['type_id'],
+            'users_id' => 1,
+            // A ENLEVER CAR FAIL DE BDD LORS DE LA CREATION DE LA METHOD.
+            'type_id1' => $_POST['type_id']
+            // FIN DE FAIL.
+        );
+        $query = new AdminModel();
+        $result = $query -> adminAddArticle($data);
+        if ($result)
+        {
+            echo "Article ajouté !";
+            $this ->admin();
+        }
     }
 }
