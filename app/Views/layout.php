@@ -92,6 +92,9 @@
                         <li>
                             <a href="#">¿ Bien choisir votre matériel ?</a>
                         </li>
+                        <li>
+                            <a href="#">Acheter votre matériel</a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
