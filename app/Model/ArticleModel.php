@@ -7,7 +7,7 @@ use W\Model\Model;
 class ArticleModel extends Model
 {
     /*********************************************************************
-     *                METHOD POUR AFFICHAGE ARTICLES
+     *                METHODE POUR AFFICHAGE ARTICLES
      *
      ********************************************************************/
     public function findType($type_id)

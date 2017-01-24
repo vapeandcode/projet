@@ -8,7 +8,8 @@ $w_routes = array(
     ['GET', '/article/faq/', 'Article#faq', 'article_faq'],
     ['GET', '/article/mentions/', 'Article#mentions', 'article_mentions'],
     ['GET', '/articles/liquides/', 'Article#liquides', 'article_liquides'],
-
+    ['GET', '/articles/eliquid/', 'Article#eliquidHome', 'eliquid_home'],
+    ['GET', '/articles/eliquid/menthol', 'Article#articlesMenthol', 'eliquid_menthol'],
 
     ['GET', '/user/', 'User#home', 'user_home'],
     ['GET', '/user/login/', 'User#loginFrom', 'user_loginForm'],

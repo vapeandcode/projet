@@ -94,7 +94,7 @@ class AdminController extends Controller
             'type_id' => $_POST['type_id'],
             'users_id' => 1,
             // A ENLEVER CAR FAIL DE BDD LORS DE LA CREATION DE LA METHOD.
-            'type_id1' => $_POST['type_id']
+//            'type_id1' => $_POST['type_id']
             // FIN DE FAIL.
         );
         $query = new AdminModel();

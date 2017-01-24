@@ -84,7 +84,7 @@
                             <a href="pages/ecig.php">Ecig</a>
                         </li>
                         <li>
-                            <a href="#">Liquide</a>
+                            <a href="<?= $this->url("eliquid_home"); ?>">Liquide</a>
                         </li>
                         <li>
                             <a href="#">FAQ</a>
