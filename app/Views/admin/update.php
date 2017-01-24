@@ -22,7 +22,7 @@ var_dump($listeUser);
     </thead>
     <tbody>
     <tr>
-        <form id="updateUser" action="form.php" method="post">
+        <form id="updateUser" action="<?= $this->url('update_user') ?>" method="post">
             <td><?php echo $listeUser['id']?></td>
             <td><input type="text" name="username" form="updateUser" value="<?php echo $listeUser['username']?>"></td>
             <td><?php echo $listeUser['password']?></td>
