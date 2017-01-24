@@ -14,9 +14,9 @@
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="<?= $this->assetUrl('libs/font-awesome/css/font-awesome.css') ?>">
-
-
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
+
+
 
 </head>
 <body>
