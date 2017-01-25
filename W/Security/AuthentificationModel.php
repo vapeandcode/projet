@@ -27,7 +27,6 @@ class AuthentificationModel
 			return 0;
 		}
 
-		var_dump(password_verify($plainPassword, $foundUser[$app->getConfig('security_password_property')]));
 
 		if(password_verify($plainPassword, $foundUser[$app->getConfig('security_password_property')])){
 			return (int) $foundUser[$app->getConfig('security_id_property')];

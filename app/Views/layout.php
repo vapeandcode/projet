@@ -47,7 +47,7 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="<?= $this->url("user_inscription"); ?>"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                     <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
@@ -84,7 +84,7 @@
                             <a href="pages/ecig.php">Ecig</a>
                         </li>
                         <li>
-                            <a href="#">Liquide</a>
+                            <a href="<?= $this->url("eliquid_home"); ?>">Liquide</a>
                         </li>
                         <li>
                             <a href="#">FAQ</a>

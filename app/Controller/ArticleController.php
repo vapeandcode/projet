@@ -7,16 +7,16 @@ use \W\Controller\Controller;
 
 class ArticleController extends Controller
 {
-    public function home()
+    public function eliquidHome()
     {
-        $this -> show('article/home');
+        $this -> show('article/eliquid/home');
     }
 
-    public function articlesDebutants()
+    public function articlesMenthol()
     {
-        $debutants = new AdminModel();
-        $result = $debutants ->findType(1);
+        $menthols = new ArticleModel();
+        $result = $menthols ->findType(4);
         // On envoi le $result dans la vue afin de pouvoir l'afficher.
-        $this->show('article/debutant', ['listeArticle' => $result]);
+        $this->show('article/eliquid/menthol', ['listeArticle' => $result]);
     }
 }

@@ -25,7 +25,13 @@ class AdminModel extends Model
         $this->setTable('users');
         $query = $this->findAll();
     //On recupere le result du findAll().
-        return $query;
+        if ($query == false)
+        {
+            echo "Une erreur est survenur lors de la récupération.";
+        } else
+        {
+            return $query;
+        }
     }
 
     /*********************************************************************
@@ -39,11 +45,12 @@ class AdminModel extends Model
     // Definie la table w_users pour la method findAll().
         $this->setTable('users');
         $query = $this->delete($id);
-        if ($query = false) {
+        if ($query == false)
+        {
             echo "Une erreur est survenur lors de la suppression.";
-            return false;
-        } elseif ($this->delete($id)) {
-            return true;
+        } else
+        {
+            return $query;
         }
     }
 
@@ -57,7 +64,13 @@ class AdminModel extends Model
     {
         $this->setTable('users');
         $query = $this->find($id);
-        return $query;
+        if ($query == false)
+        {
+            echo "Une erreur est survenur lors de la recherche.";
+        } else
+        {
+            return $query;
+        }
     }
 
     // Method qui permet de mettre a jour l'utisateur
@@ -65,7 +78,13 @@ class AdminModel extends Model
     {
         $this->setTable('users');
         $query = $this->update($data, $id, $stripTags = true);
-        return $query;
+        if ($query == false)
+        {
+            echo "Une erreur est survenur lors de la mis a jour.";
+        } else
+        {
+            return $query;
+        }
     }
 
     /*********************************************************************
@@ -78,6 +97,12 @@ class AdminModel extends Model
     {
         $this->setTable('article');
         $query = $this -> insert($data, $stripTags = true);
-        return $query;
+        if ($query == false)
+        {
+            echo "Une erreur est survenur lors de la création.";
+        } else
+        {
+            return $query;
+        }
     }
 }

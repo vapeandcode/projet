@@ -84,7 +84,7 @@ class AdminController extends Controller
         } else {
             $link = $_POST['link'];
         }
-
+        // ON RECUPERE LE $_POST DANS UN TABLEAU POUR LE SOUMETTRE A LA METHOD.
         $data = array(
             'title' => $_POST['title'],
             'description' => $_POST['description'],
@@ -92,9 +92,10 @@ class AdminController extends Controller
             'schema' => $_POST['schema'],
             'link' => $link,
             'type_id' => $_POST['type_id'],
+            // ID = 1, pour le moment pour faire du test.
             'users_id' => 1,
             // A ENLEVER CAR FAIL DE BDD LORS DE LA CREATION DE LA METHOD.
-            'type_id1' => $_POST['type_id']
+//            'type_id1' => $_POST['type_id']
             // FIN DE FAIL.
         );
         $query = new AdminModel();
