@@ -9,7 +9,7 @@ $this->start('main_content');
 <?php for ($i=0; $i<count($listeArticle); $i++) { ?>
     <div class="tabac">
         <p><?php echo $listeArticle[$i]['title']?></p>
-        <p><?php echo $listeArticle[$i]['picture']?></p>
+        <p><img src="<?= $this->assetUrl('img/img_article/' . $listeArticle[$i]['picture'] . '') ?>" alt="gitan"/></p><?php /*echo $listeArticle[$i]['picture']*/?>
         <p><?php echo $listeArticle[$i]['description']?></p>
     </div>
 <?php } ?>
