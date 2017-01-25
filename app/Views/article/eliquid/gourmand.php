@@ -3,7 +3,7 @@ $this->start('main_content');
 ?>
     <h2>E-LIQUIDES GOURMANDS</h2>
     <p>
-        Décrouvrez les e-liquides goût gourmand que nous avons sélectionné pour vous.
+        Découvrez les e-liquides goût gourmand que nous avons sélectionné pour vous.
     </p>
 
 <?php for ($i=0; $i<count($listeArticle); $i++) { ?>

@@ -3,7 +3,7 @@ $this->start('main_content');
 ?>
     <h2>E-LIQUIDES MENTHOLS</h2>
     <p>
-        Décrouvrez les e-liquides goût menthol que nous avons sélectionné pour vous.
+        Découvrez les e-liquides goût menthol que nous avons sélectionné pour vous.
     </p>
 
 

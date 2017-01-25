@@ -3,7 +3,7 @@ $this->start('main_content');
 ?>
     <h2>E-LIQUIDES</h2>
     <p>
-        Décrouvrez les e-liquides que nous avons sélectionné pour vous en fonction de vos goûts.
+        Découvrez les e-liquides que nous avons sélectionné pour vous en fonction de vos goûts.
     </p>
             <div class="grid">
                 <figure class="effect-honey">
