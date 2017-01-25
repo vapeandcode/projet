@@ -1,10 +1,13 @@
 <?php $this->layout('layout', ['title' => 'Eliquid Menthol']);
 $this->start('main_content');
 ?>
-    <h2>ELIQUIDS MENTHOLS</h2>
+    <h2>E-LIQUIDES MENTHOLS</h2>
     <p>
-        Décrouvrez les eliquids goût menthol que nous avons sélectionné pour vous.
+        Décrouvrez les e-liquides goût menthol que nous avons sélectionné pour vous.
     </p>
+
+
+
 
     <?php for ($i=0; $i<count($listeArticle); $i++) { ?>
     <div class="menthol">

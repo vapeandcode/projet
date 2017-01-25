@@ -17,6 +17,7 @@ $w_routes = array(
     ['GET|POST', '/articles/eliquid/tabac', 'Article#articlesTabac', 'eliquid_tabac'],
     ['GET|POST', '/articles/eliquid/gourmand', 'Article#articlesGourmand', 'eliquid_gourmand'],
     ['GET|POST', '/articles/eliquid/fruite', 'Article#articlesFruite', 'eliquid_fruite'],
+
     /*********************************************************************
      *                ROUTE UTILISATEURS
      *

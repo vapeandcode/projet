@@ -1,14 +1,21 @@
 <?php
-<h2> DEBUTANTS </h2>
 
-<p> Des kits complets prêts a l'emploi,c'est très simple,on ajoute le liquide et on vape!! <p/>
+<?php $this->layout('layout', ['title' => 'ecig debutant']);
+$this->start('main_content');
+?>
+    <h2>E-CIG DEBUTANTS</h2>
+    <p>
+        Des kits complets prêts a l'emploi,c'est très simple,on ajoute le liquide et on vape!!
+    </p>
 
-<div class="grid">
-                    <figure class="effect-honey">
-                        <img src="public/assets/img/img_article/boxegoaio.jpg" alt="boxegoaio"/>
-                        <figcaption>
-                            <h2><span>Débutants</span></h2>
-                            <a href="#">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
+<?php for ($i=0; $i<count($listeArticle); $i++) { ?>
+    <div class="debutant">
+        <p><?php echo $listeArticle[$i]['title']?></p>
+        <p><?php echo $listeArticle[$i]['picture']?></p>
+        <p><?php echo $listeArticle[$i]['schema']?></p>
+        <p><?php echo $listeArticle[$i]['description']?></p>
+        <p><?php echo $listeArticle[$i]['link']?></p>
+    </div>
+<?php } ?>
+
+<?php $this->stop('main_content') ?>
