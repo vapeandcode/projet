@@ -7,6 +7,5 @@
     <input type="text" name="username" placeholder="Pseudo"></br>
     <input type="password" name="password" placeholder="Mot de passe"></br>
     <input type="submit" class="AddButton" name="subLogin" value="Connection">
-
 </form>
 <?php $this->stop('main_content') ?>

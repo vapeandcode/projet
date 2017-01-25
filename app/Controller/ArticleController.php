@@ -19,4 +19,12 @@ class ArticleController extends Controller
         // On envoi le $result dans la vue afin de pouvoir l'afficher.
         $this->show('article/eliquid/menthol', ['listeArticle' => $result]);
     }
+
+    public function articlesTabac()
+    {
+        $tabac = new ArticleModel();
+        $result = $tabac ->findType(5);
+        // On envoi le $result dans la vue afin de pouvoir l'afficher.
+        $this->show('article/eliquid/tabac', ['listeArticle' => $result]);
+    }
 }

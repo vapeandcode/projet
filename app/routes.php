@@ -14,13 +14,16 @@ $w_routes = array(
     ['GET|POST', '/articles/liquides/', 'Article#liquides', 'article_liquides'],
     ['GET|POST', '/articles/eliquid/', 'Article#eliquidHome', 'eliquid_home'],
     ['GET|POST', '/articles/eliquid/menthol', 'Article#articlesMenthol', 'eliquid_menthol'],
+    ['GET|POST', '/articles/eliquid/tabac', 'Article#articlesTabac', 'eliquid_tabac'],
+    ['GET|POST', '/articles/eliquid/gourmand', 'Article#articlesGourmand', 'eliquid_gourmand'],
+    ['GET|POST', '/articles/eliquid/fruite', 'Article#articlesFruite', 'eliquid_fruite'],
     /*********************************************************************
      *                ROUTE UTILISATEURS
      *
      ********************************************************************/
     ['GET|POST', '/user/', 'User#home', 'user_home'],
     ['GET|POST', '/user/login/', 'User#loginFrom', 'user_loginForm'],
-    ['POST', '/user/login/', 'User#loginSubmit', 'user_loginSubmit'],
+    ['GET|POST', '/user/loginUser/', 'User#loginSubmit', 'user_loginSubmit'],
     ['GET|POST', '/user/logout/', 'User#logout', 'user_logout'],
     ['GET|POST', '/user/inscription/', 'User#inscription', 'user_inscription'],  //Page avec le formulaire d'inscription
     ['GET|POST', '/user/createuser/', 'User#createUser', 'user_create_user'],    //Page requete d'inscription

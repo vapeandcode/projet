@@ -10,9 +10,9 @@
     }
 ?>
 <form id="updateUser" action="<?= $this->url('user_create_user') ?>" method="post">
-    <input type="text" name="username" value="" placeholder="Pseudo">
-    <input type="email" name="email" value="" placeholder="votre_email@mail.com">
-    <input type="text" name="password"  value="" placeholder="Mot de passe">
-    <input type="submit" name="submit" value="Envoyer">
+    <input type="text" name="username" value="" placeholder="Pseudo" required>
+    <input type="email" name="email" value="" placeholder="votre_email@mail.com" required>
+    <input type="password" name="password"  value="" placeholder="Mot de passe" required>
+    <input type="submit" name="submit" value="Envoyer" required>
 </form>
 <?php $this->stop('main_content') ?>

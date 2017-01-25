@@ -7,5 +7,8 @@ $this->start('main_content');
     </p>
 
     <p><a href="<?= $this->url("eliquid_menthol"); ?>">Menthol</a></p>
+    <p><a href="<?= $this->url("eliquid_tabac"); ?>">Tabac</a></p>
+    <p><a href="<?= $this->url("eliquid_gourmand"); ?>">Gourmand</a></p>
+    <p><a href="<?= $this->url("eliquid_fruite"); ?>">Fruité</a></p>
 
 <?php $this->stop('main_content') ?>

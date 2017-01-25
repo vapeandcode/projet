@@ -4,7 +4,6 @@ namespace Model;
 use \W\Model\UsersModel;
 use \W\Security\AuthentificationModel;
 
-//class LoginModel extends \W\Model\Model
 class LoginModel extends UsersModel
 {
     public function login(array $data)
@@ -18,7 +17,6 @@ class LoginModel extends UsersModel
             //var_dump($userLogin->isValidLoginInfo("tatatiti", "toto"));
             if($userLogin->isValidLoginInfo($data['username'], $data['password']) != 0)
             {
-                var_dump($userConnection);
                 $userConnection = new UsersModel();
 
 
@@ -30,14 +28,6 @@ class LoginModel extends UsersModel
 
                 return "login";
             }
-            else
-            {
-                echo "IDENTIFIANTS INCORRECTS !";
-            }
-        }
-        else
-        {
-          echo "CHAMPS INCORRECTS !";
         }
     }
 }
