@@ -20,9 +20,9 @@ $w_routes = array(
     ['GET|POST', '/article/eliquid/fruite/', 'Article#articlesFruite', 'eliquid_fruite'],
     // ROUTES ECIG
     ['GET|POST', '/article/ecig/', 'Article#ecigHome', 'ecig_home'],
-    ['GET|POST', '/article/ecig/debutant/', 'Article#ecigDebutant', 'ecig_debutant'],
-    ['GET|POST', '/article/ecig/intermediaire/', 'Article#ecigIntermediaire', 'ecig_intermediaire'],
-    ['GET|POST', '/article/ecig/expert/', 'Article#ecigExpert', 'ecig_expert'],
+    ['GET|POST', '/article/ecig/debutant/', 'Article#articlesDebutant', 'ecig_debutant'],
+    ['GET|POST', '/article/ecig/intermediaire/', 'Article#articlesIntermediaire', 'ecig_intermediaire'],
+    ['GET|POST', '/article/ecig/expert/', 'Article#articlesExpert', 'ecig_expert'],
 
     /*********************************************************************
      *                ROUTE UTILISATEURS

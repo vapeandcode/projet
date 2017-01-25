@@ -17,6 +17,30 @@ class ArticleController extends Controller
         $this ->show('article/eliquid/home');
     }
 
+    public function articlesDebutant()
+    {
+        $debutant = new ArticleModel();
+        $result = $debutant ->findType(1);
+        // On envoi le $result dans la vue afin de pouvoir l'afficher.
+        $this->show('article/ecig/debutant', ['listeArticle' => $result]);
+    }
+
+    public function articlesIntermediaire()
+    {
+        $intermediaire = new ArticleModel();
+        $result = $intermediaire ->findType(2);
+        // On envoi le $result dans la vue afin de pouvoir l'afficher.
+        $this->show('article/ecig/intermediaire', ['listeArticle' => $result]);
+    }
+
+    public function articlesExpert()
+    {
+        $expert = new ArticleModel();
+        $result = $expert ->findType(4);
+        // On envoi le $result dans la vue afin de pouvoir l'afficher.
+        $this->show('article/ecig/expert', ['listeArticle' => $result]);
+    }
+
     public function articlesMenthol()
     {
         $menthol = new ArticleModel();

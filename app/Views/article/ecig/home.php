@@ -7,30 +7,27 @@ $this->start('main_content');
 
     <div class="grid">
         <figure class="effect-honey">
-            <img src="public\assets\img\img_article\boxegoaio.jpg" alt="boxegoaio"/>
-                <figcaption>
-                    <h2><span>Débutants</span></h2>
-                    <a href="<?= $this->url("ecig_debutant"); ?>">Débutants</a>
-                </figcaption>
-        </figure>
-    </div>
-
-    <div class="grid">
-        <figure class="effect-honey">
-            <img src="public\assets\img\img_article\istickpowernano.jpg" alt="istickpowernano"/>
             <figcaption>
-                <h2><span>Connaisseurs</span></h2>
-                <a href="<?= $this->url("ecig_intermediaire"); ?>">Connaisseurs</a>
+                <h2><span>Débutants</span></h2>
+                <a href="<?= $this->url("ecig_debutant"); ?>"><img src="<?= $this->assetUrl('img\img_article\boxegoaio.jpg') ?>" alt="boxegoaio"/> </a>
             </figcaption>
         </figure>
     </div>
 
     <div class="grid">
         <figure class="effect-honey">
-            <img src="public\assets\img\img_article\kitboxalien.jpg" alt="kitboxalien"/>
+            <figcaption>
+            <h2><span>Connaisseurs</span></h2>
+                <a href="<?= $this->url("ecig_intermediaire"); ?>"><img src="<?= $this->assetUrl('img\img_article\istickpowernano.jpg') ?>" alt="istickpowernano"/> </a>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="grid">
+        <figure class="effect-honey">
             <figcaption>
                 <h2><span>Experts</span></h2>
-                <a href="<?= $this->url("ecig_expert"); ?>">Experts</a>
+                <a href="<?= $this->url("ecig_expert"); ?>"><img src="<?= $this->assetUrl('img\img_article\kitboxalien.png') ?>" alt="kitboxalien"/></a>
             </figcaption>
         </figure>
     </div>
