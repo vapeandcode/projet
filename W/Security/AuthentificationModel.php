@@ -17,7 +17,7 @@ class AuthentificationModel
 	public function isValidLoginInfo($usernameOrEmail, $plainPassword)
 	{
 
-		$app = getApp();
+        $app = getApp();
 
 		$usersModel = new UsersModel();
 		$usernameOrEmail = strip_tags(trim($usernameOrEmail));

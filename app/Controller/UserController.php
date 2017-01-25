@@ -54,6 +54,12 @@ class UserController extends Controller
 
     public function createUser()
     {
+        // SI LE PASSWORD A AU MOINS 6 CARACTERE
+        if (strlen($_POST['password']) < 6)
+        {
+            $msg = "Mot de passe trop court, 6 caractère minimum.";
+            $this->show('user/inscription', ['msg' => $msg]);
+        }
         // ON VERIFIE SI LE MAIL OU LE USERNAME EST DEJA DANS LA BDD
         $ifExist = new UsersModel();
         $mailExist = $ifExist->emailExists($_POST['email']);
