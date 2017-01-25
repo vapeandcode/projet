@@ -3,7 +3,7 @@ $this->start('main_content');
 ?>
     <h2>ELIQUIDS MENTHOLS</h2>
     <p>
-        Décrouvrez les eliquids goût menthol que nous avons sélectionné pour vous.
+        Découvrez les eliquids goût menthol que nous avons sélectionné pour vous.
     </p>
 
     <?php for ($i=0; $i<count($listeArticle); $i++) { ?>

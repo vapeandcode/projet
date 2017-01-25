@@ -11,12 +11,19 @@ $w_routes = array(
     ['GET|POST', '/article/niveau/', 'Article#niveau', 'article_niveau'],
     ['GET|POST', '/article/faq/', 'Article#faq', 'article_faq'],
     ['GET|POST', '/article/mentions/', 'Article#mentions', 'article_mentions'],
-    ['GET|POST', '/articles/liquides/', 'Article#liquides', 'article_liquides'],
-    ['GET|POST', '/articles/eliquid/', 'Article#eliquidHome', 'eliquid_home'],
-    ['GET|POST', '/articles/eliquid/menthol', 'Article#articlesMenthol', 'eliquid_menthol'],
-    ['GET|POST', '/articles/eliquid/tabac', 'Article#articlesTabac', 'eliquid_tabac'],
-    ['GET|POST', '/articles/eliquid/gourmand', 'Article#articlesGourmand', 'eliquid_gourmand'],
-    ['GET|POST', '/articles/eliquid/fruite', 'Article#articlesFruite', 'eliquid_fruite'],
+    // ROUTES LIQUIDES
+    ['GET|POST', '/article/liquides/', 'Article#liquides', 'article_liquides'],
+    ['GET|POST', '/article/eliquid/', 'Article#eliquidHome', 'eliquid_home'],
+    ['GET|POST', '/article/eliquid/menthol/', 'Article#articlesMenthol', 'eliquid_menthol'],
+    ['GET|POST', '/article/eliquid/tabac/', 'Article#articlesTabac', 'eliquid_tabac'],
+    ['GET|POST', '/article/eliquid/gourmand/', 'Article#articlesGourmand', 'eliquid_gourmand'],
+    ['GET|POST', '/article/eliquid/fruite/', 'Article#articlesFruite', 'eliquid_fruite'],
+    // ROUTES ECIG
+    ['GET|POST', '/article/ecig/', 'Article#ecigHome', 'ecig_home'],
+    ['GET|POST', '/article/ecig/debutant/', 'Article#ecigDebutant', 'ecig_debutant'],
+    ['GET|POST', '/article/ecig/intermediaire/', 'Article#ecigIntermediaire', 'ecig_intermediaire'],
+    ['GET|POST', '/article/ecig/expert/', 'Article#ecigExpert', 'ecig_expert'],
+
     /*********************************************************************
      *                ROUTE UTILISATEURS
      *

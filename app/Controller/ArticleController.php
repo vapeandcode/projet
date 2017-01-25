@@ -7,9 +7,14 @@ use \W\Controller\Controller;
 
 class ArticleController extends Controller
 {
+    public function ecigHome()
+    {
+        $this->show('article/ecig/home');
+    }
+
     public function eliquidHome()
     {
-        $this -> show('article/eliquid/home');
+        $this ->show('article/eliquid/home');
     }
 
     public function articlesMenthol()

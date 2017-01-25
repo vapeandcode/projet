@@ -3,7 +3,7 @@ $this->start('main_content');
 ?>
     <h2>ELIQUIDS FRUITES</h2>
     <p>
-        Décrouvrez les eliquids goût fruité que nous avons sélectionné pour vous.
+        Découvrez les eliquids goût fruité que nous avons sélectionné pour vous.
     </p>
 
 <?php for ($i=0; $i<count($listeArticle); $i++) { ?>

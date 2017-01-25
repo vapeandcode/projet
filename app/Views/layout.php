@@ -81,16 +81,13 @@
                 <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="pages/ecig.php">Ecig</a>
-                        </li>
-                        <li>
                             <a href="<?= $this->url("eliquid_home"); ?>">Liquide</a>
                         </li>
                         <li>
                             <a href="#">FAQ</a>
                         </li>
                         <li>
-                            <a href="#">¿ Bien choisir votre matériel ?</a>
+                            <a href="<?= $this->url("ecig_home"); ?>">¿ Bien choisir votre matériel ?</a>
                         </li>
                         <li>
                             <a href="#">Acheter votre matériel</a>
