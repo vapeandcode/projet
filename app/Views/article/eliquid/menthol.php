@@ -8,9 +8,9 @@ $this->start('main_content');
 
     <?php for ($i=0; $i<count($listeArticle); $i++) { ?>
     <div class="menthol">
+        <p><?php echo $listeArticle[$i]['title']?></p>
         <p><?php echo $listeArticle[$i]['picture']?></p>
         <p><?php echo $listeArticle[$i]['description']?></p>
-        <p><?php echo $listeArticle[$i]['link']?></p>
     </div>
     <?php } ?>
 
