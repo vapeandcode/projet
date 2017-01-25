@@ -1,14 +1,19 @@
-<?php
-<h2> INTERMEDIAIRES </h2>
+<?php $this->layout('layout', ['title' => 'ecig intermediaire']);
+$this->start('main_content');
+?>
+    <h2>E-CIG INTERMEDIAIRES</h2>
+    <p>
+        Un peu plus évolués ces kits vous permettrons de vapoter plus longtemps.De plus vous pourrez contrôler la température,changer la résistance et effectuer tous les réglages nécessaires.
+    </p>
 
-<p> Un peu plus évolués ces kits vous permettrons de vapoter plus longtemps.De plus vous pourrez contrôler la température,changer la résistance et effectuer tous les réglages nécessaires. </p>
+<?php for ($i=0; $i<count($listeArticle); $i++) { ?>
+    <div class="intermediaire">
+        <p><?php echo $listeArticle[$i]['title']?></p>
+        <p><?php echo $listeArticle[$i]['picture']?></p>
+        <p><?php echo $listeArticle[$i]['schema']?></p>
+        <p><?php echo $listeArticle[$i]['description']?></p>
+        <p><?php echo $listeArticle[$i]['link']?></p>
+    </div>
+<?php } ?>
 
-<div class="grid">
-                    <figure class="effect-honey">
-                             <img src="public/assets/img/img_article/istickpowernano.jpg" alt="istickpowernano"/>
-                        <figcaption>
-                            <h2><span>Intermédiaires</span></h2>
-                            <a href="#">View more</a>
-                        </figcaption>
-                    </figure>
-                </div>
+<?php $this->stop('main_content') ?>

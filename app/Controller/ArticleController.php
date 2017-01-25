@@ -36,7 +36,7 @@ class ArticleController extends Controller
     public function articlesExpert()
     {
         $expert = new ArticleModel();
-        $result = $expert ->findType(4);
+        $result = $expert ->findType(3);
         // On envoi le $result dans la vue afin de pouvoir l'afficher.
         $this->show('article/ecig/expert', ['listeArticle' => $result]);
     }
