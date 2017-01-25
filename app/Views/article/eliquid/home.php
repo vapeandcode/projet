@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Eliquid']);
+<?php $this->layout('layout', ['title' => 'Eliquids']);
 $this->start('main_content');
 ?>
     <h2>ELIQUIDS</h2>
