@@ -1,9 +1,9 @@
 <?php $this->layout('layout', ['title' => 'Eliquid Tabac']);
 $this->start('main_content');
 ?>
-    <h2>ELIQUIDS TABAC</h2>
+    <h2>E-LIQUIDES TABAC</h2>
     <p>
-        Découvrez les eliquids goût tabac que nous avons sélectionné pour vous.
+        Découvrez les e-liquides goût tabac que nous avons sélectionné pour vous.
     </p>
 
 <?php for ($i=0; $i<count($listeArticle); $i++) { ?>

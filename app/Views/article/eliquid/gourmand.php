@@ -1,9 +1,9 @@
 <?php $this->layout('layout', ['title' => 'Eliquid Gourmand']);
 $this->start('main_content');
 ?>
-    <h2>ELIQUIDS GOURMANDS</h2>
+    <h2>E-LIQUIDES GOURMANDS</h2>
     <p>
-        Découvrez les eliquids goût gourmand que nous avons sélectionné pour vous.
+        Décrouvrez les e-liquides goût gourmand que nous avons sélectionné pour vous.
     </p>
 
 <?php for ($i=0; $i<count($listeArticle); $i++) { ?>
