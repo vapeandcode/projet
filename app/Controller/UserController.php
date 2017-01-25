@@ -26,7 +26,7 @@ class UserController extends Controller
         $userLog = new LoginModel();
         $result = $userLog->login($_POST);
 
-        // SI L'UTILISATEUR EST CONNECTE IL EST ENVOYE VERS LA PAGE SUCCES
+        // SI L'UTILISATEUR EST CONNECTE IL EST ENVOYE VERS LA PAGE SUCCESS
         if ($result == "login")
         {
             $this->show('user/loginSuccess');
@@ -39,7 +39,7 @@ class UserController extends Controller
 
     public function logout()
     {
-        $this->show('user/logout');
+        $this -> logUserOut();
     }
 
     /*********************************************************************
@@ -49,7 +49,7 @@ class UserController extends Controller
 
     public function inscription()
     {
-        $this->show('user/inscription');
+        $this->show('user/inscription'); // VUE DU FORMULAIRE D INSCRIPTION
     }
 
     public function createUser()
@@ -60,7 +60,7 @@ class UserController extends Controller
             $msg = "Mot de passe trop court, 6 caractère minimum.";
             $this->show('user/inscription', ['msg' => $msg]);
         }
-        // ON VERIFIE SI LE MAIL OU LE USERNAME EST DEJA DANS LA BDD
+        // ON VERIFIE SI LE MAIL ET LE USERNAME EST DEJA DANS LA BDD
         $ifExist = new UsersModel();
         $mailExist = $ifExist->emailExists($_POST['email']);
         $userExist = $ifExist->usernameExists($_POST['username']);

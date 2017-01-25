@@ -22,34 +22,26 @@
 <body>
 	<div class="container">
 
-<!--        <header class="searchNav">-->
-<!--            <form role="search">-->
-<!--                <div class="form-group">-->
-<!--                    <input type="text"  placeholder="Search">-->
-<!--                    <button type="submit" ><i class="fa fa-search" aria-hidden="true"></i></button>-->
-<!--                </div>-->
-<!--            </form>-->
-
-<!--            <div class="dropdown">-->
-<!--                <a class="btn btn-secondary dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--                    <i class="fa fa-bars fa-2" aria-hidden="true"></i>-->
-<!--                </a>-->
-<!--                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">-->
-<!---->
-<!--                    <a class="dropdown-item" href="#">Connectez vous</a>-->
-<!--                    <hr>-->
-<!--                    <a class="dropdown-item" href="#">Inscrivez vous</a>-->
-<!---->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </header>-->
         <!-- MENU FADE IN/OUT -->
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?= $this->url("user_inscription"); ?>"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
+                    <!--  SI ON A PAS DE SESSION D OUVERTE, ON AFFICHE -->
+                    <?php if (!isset($_SESSION['user']['username'])) { ?>
+                        <li><a href="<?= $this->url("user_inscription"); ?>"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+                        <!--  SI ON A UNE SESSION D OUVERTE, ON AFFICHE -->
+                    <?php } elseif (isset($_SESSION['user']['username'])) { ?>
+                        <li><span class="glyphicon"><?php echo $_SESSION['user']['username'] ?></span></li>
+                        <li><a href="<?= $this->url("user_logout"); ?>"><span class="glyphicon"></span> Login</a></li>
+                    <?php }
+                        if ($_SESSION['user']['role'] == "admin") { ?>
+
+                        <!--  SI ON A UNE SESSION ADMIN D OUVERTE, ON AFFICHE -->
+                        <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <?php } ?>
+                 </ul>
             </div>
         </nav>
 
