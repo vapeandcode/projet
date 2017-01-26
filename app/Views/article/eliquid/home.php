@@ -1,10 +1,13 @@
 <?php $this->layout('layout', ['title' => 'Eliquids']);
 $this->start('main_content');
 ?>
-    <h2>E-LIQUIDES</h2>
-    <p>
-        Découvrez les e-liquides que nous avons sélectionné pour vous en fonction de vos goûts.
-    </p>
+    <div class="center">
+        <h2>E-LIQUIDES</h2>
+        <p>
+            Découvrez les e-liquides que nous avons sélectionné pour vous en fonction de vos goûts.
+        </p>
+
+    </div>
             <div class="grid">
                 <figure class="effect-honey">
                     <figcaption>

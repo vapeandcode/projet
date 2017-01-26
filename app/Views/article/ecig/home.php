@@ -1,10 +1,11 @@
 <?php $this->layout('layout', ['title' => 'Ecig Debutant']);
 $this->start('main_content');
 ?>
+    <div class="center">
     <h2>BIEN CHOISIR</h2>
 
     <p>Bien choisir son kit ecig est essentiel !!<p/>
-
+    </div>
     <div class="grid">
         <figure class="effect-honey">
             <figcaption>

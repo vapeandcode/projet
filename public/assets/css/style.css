@@ -205,11 +205,22 @@ footer > h2 {
 
 .nav_Ecig > ul > li:hover {
   background-color: rgb(106, 106, 106);
+
+}
+  /* MISE EN PAGE DES TEXTES DE PRESENTATION */
+.center h2, p {
+  text-align: center;
+}
+.effect-honey h2 {
+ text-align: center;
 }
 
-/* EFFET HOVER SUR IMAGES DE PRESENTATION */
+/* MISE EN PAGE ET EFFET HOVER SUR IMAGES DE PRESENTATION */
 
 .effect-honey img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 0px 10px 12px rgba(119, 119, 119, 0.75);
   -moz-box-shadow: 0px 0px 10px 12px rgba(119, 119, 119, 0.75);
   -webkit-box-shadow: 0px 0px 10px 12px rgba(119, 119, 119, 0.75);
@@ -219,6 +230,15 @@ footer > h2 {
   box-shadow: 0px 0px 10px 12px rgba(221, 221, 221, 0.75);
   -moz-box-shadow: 0px 0px 10px 12px rgba(221, 221, 221, 0.75);
   -webkit-box-shadow: 0px 0px 10px 12px rgba(221, 221, 221, 0.75);
+}
+
+/* POSITIONNEMENT IMAGES EN DESKTOP */
+@media (min-width: 1024px) {
+
+
+  .effect-honey img{
+
+  }
 }
 
 
