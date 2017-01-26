@@ -74,13 +74,13 @@
                 <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="<?= $this->url("eliquid_home"); ?>">Liquide</a>
+                            <a href="<?= $this->url("eliquid_home"); ?>">Liquides</a>
                         </li>
                         <li>
                             <a href="#">FAQ</a>
                         </li>
                         <li>
-                            <a href="<?= $this->url("ecig_home"); ?>">¿ Bien choisir votre matériel ?</a>
+                            <a href="<?= $this->url("ecig_home"); ?>">Bien choisir votre matériel </a>
                         </li>
                         <li>
                             <a href="#">Acheter votre matériel</a>
@@ -88,7 +88,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">Contactez nous</a>
+                            <a href="#">Contactez nous &nbsp</a>
                         </li>
                     </ul>
                 </nav>
