@@ -18,7 +18,7 @@
     <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
+  <!-- Wrapper des slides du carousel -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="http://lorempixel.com/400/200/" alt="Chania">
