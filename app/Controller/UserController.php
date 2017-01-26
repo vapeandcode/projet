@@ -39,7 +39,7 @@ class UserController extends Controller
 
     public function logout()
     {
-        $this -> logUserOut();
+        unset($_SESSION['user']);
     }
 
     /*********************************************************************

@@ -27,7 +27,7 @@
             <div class="container-fluid">
                 <ul class="nav navbar-nav navbar-right">
                     <!--  SI ON A PAS DE SESSION D OUVERTE, ON AFFICHE -->
-                    <?php if (!isset($_SESSION['user']['username'])) { ?>
+                    <?php if (!isset($_SESSION['user'])) { ?>
                         <li><a href="<?= $this->url("user_inscription"); ?>"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                         <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 
@@ -36,11 +36,12 @@
                         <li><span class="glyphicon"><?php echo $_SESSION['user']['username'] ?></span></li>
                         <li><a href="<?= $this->url("user_logout"); ?>"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     <?php }
+                        if (isset($_SESSION['user'])) {
                         if ($_SESSION['user']['role'] == "admin") { ?>
 
                         <!--  SI ON A UNE SESSION ADMIN D OUVERTE, ON AFFICHE -->
-                        <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon"></span> Administration </a></li>
-                    <?php } ?>
+                        <li><a href="<?= $this->url("admin_users"); ?>"><span class="glyphicon"></span> Administration </a></li>
+                    <?php }} ?>
                  </ul>
             </div>
         </nav>
