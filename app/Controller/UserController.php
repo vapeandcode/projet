@@ -16,6 +16,11 @@ class UserController extends Controller
         $this->show('user/home');
     }
 
+    /*********************************************************************
+     *                METHOD POUR CONNECTION/DECONNECTION UTILISATEURS
+     *
+     ********************************************************************/
+
     public function loginFrom()
     {
         $this->show('user/login');
