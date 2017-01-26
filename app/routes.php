@@ -24,12 +24,7 @@ $w_routes = array(
     ['GET|POST', '/article/ecig/intermediaire/', 'Article#articlesIntermediaire', 'ecig_intermediaire'],
     ['GET|POST', '/article/ecig/expert/', 'Article#articlesExpert', 'ecig_expert'],
     
-    /*********************************************************************
-    *                 ROUTE  FAQ
-    *
-    *********************************************************************/
-
-    ['GET|POST', '/faq/', 'Faq#home', 'faq_home'],
+    
 
     /*********************************************************************
      *                ROUTES UTILISATEURS
