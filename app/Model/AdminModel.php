@@ -27,7 +27,7 @@ class AdminModel extends Model
     //On recupere le result du findAll().
         if ($query == false)
         {
-            echo "Une erreur est survenur lors de la récupération.";
+            echo "Une erreur est survenue lors de la récupération.";
         } else
         {
             return $query;
@@ -47,7 +47,7 @@ class AdminModel extends Model
         $query = $this->delete($id);
         if ($query == false)
         {
-            echo "Une erreur est survenur lors de la suppression.";
+            echo "Une erreur est survenue lors de la suppression.";
         } else
         {
             return $query;
