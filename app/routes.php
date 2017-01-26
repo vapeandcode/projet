@@ -11,6 +11,8 @@ $w_routes = array(
     ['GET|POST', '/article/niveau/', 'Article#niveau', 'article_niveau'],
     ['GET|POST', '/article/faq/', 'Article#faq', 'article_faq'],
     ['GET|POST', '/article/mentions/', 'Article#mentions', 'article_mentions'],
+    ['GET|POST', '/article/api/', 'Article#api', 'article_api'],
+
     // ROUTES LIQUIDES
     ['GET|POST', '/article/liquides/', 'Article#liquides', 'article_liquides'],
     ['GET|POST', '/article/eliquid/', 'Article#eliquidHome', 'eliquid_home'],
