@@ -7,7 +7,7 @@ $this->start('main_content');
  */
 var_dump($listeUser);
 ?>
-<h2>Gestion de mis a jour de <?php echo  $listeUser['username'] ?></h2>
+<h2>Gestion de mises a jour de <?php echo  $listeUser['username'] ?></h2>
 
 <table class="table">
     <thead>
