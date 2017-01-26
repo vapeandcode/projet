@@ -66,7 +66,7 @@ class AdminModel extends Model
         $query = $this->find($id);
         if ($query == false)
         {
-            echo "Une erreur est survenur lors de la recherche.";
+            echo "Une erreur est survenue lors de la recherche.";
         } else
         {
             return $query;
@@ -80,7 +80,7 @@ class AdminModel extends Model
         $query = $this->update($data, $id, $stripTags = true);
         if ($query == false)
         {
-            echo "Une erreur est survenur lors de la mis a jour.";
+            echo "Une erreur est survenue lors de la mise a jour.";
         } else
         {
             return $query;
@@ -99,7 +99,7 @@ class AdminModel extends Model
         $query = $this -> insert($data, $stripTags = true);
         if ($query == false)
         {
-            echo "Une erreur est survenur lors de la création.";
+            echo "Une erreur est survenue lors de la création.";
         } else
         {
             return $query;
