@@ -12,7 +12,7 @@ $this->start('main_content');
                 <figure class="effect-honey">
                     <figcaption>
                         <h2>Menthol</h2>
-                        <a href="<?= $this->url("eliquid_menthol"); ?>"><img src="<?= $this->assetUrl('img/img_article/kiss.jpeg') ?>" alt="kiss"/></a>
+                        <a href="<?= $this->url("eliquid_menthol"); ?>"><img src="<?= $this->assetUrl('img/img_article/kiss.jpeg') ?>" alt="e-liquide-menthol-kiss"/></a>
                     </figcaption>
                 </figure>
             </div>
@@ -21,7 +21,7 @@ $this->start('main_content');
                 <figure class="effect-honey">
                     <figcaption>
                         <h2>Tabac</h2>
-                        <a href="<?= $this->url("eliquid_tabac"); ?>"><img src="<?= $this->assetUrl('img/img_article/gainsbar.jpg') ?>" alt="gainsbar"/></a>
+                        <a href="<?= $this->url("eliquid_tabac"); ?>"><img src="<?= $this->assetUrl('img/img_article/gainsbar.jpg') ?>" alt="e-liquide-gout-tabac-gainsbar"/></a>
                     </figcaption>
                 </figure>
             </div>
@@ -30,7 +30,7 @@ $this->start('main_content');
                 <figure class="effect-honey">
                     <figcaption>
                         <h2>Gourmand</h2>
-                        <a href="<?= $this->url("eliquid_gourmand"); ?>"><img src="<?= $this->assetUrl('img/img_article/femme.jpg') ?>" alt="femme"/></a>
+                        <a href="<?= $this->url("eliquid_gourmand"); ?>"><img src="<?= $this->assetUrl('img/img_article/femme.jpg') ?>" alt="e-liquide-gourmand-femme-a-barbe"/></a>
                     </figcaption>
                 </figure>
             </div>
@@ -39,7 +39,7 @@ $this->start('main_content');
                 <figure class="effect-honey">
                     <figcaption>
                         <h2>Fruité</h2>
-                        <a href="<?= $this->url("eliquid_fruite"); ?>"><img src="<?= $this->assetUrl('img/img_article/elloco.jpg') ?>" alt="elloco"/></a>
+                        <a href="<?= $this->url("eliquid_fruite"); ?>"><img src="<?= $this->assetUrl('img/img_article/elloco.jpg') ?>" alt="e-liquide-fruité-elloco"/></a>
                     </figcaption>
                 </figure>
             </div>

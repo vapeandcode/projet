@@ -79,7 +79,7 @@
                             <a href="#">FAQ</a>
                         </li>
                         <li>
-                            <a href="<?= $this->url("ecig_home"); ?>">¿ Bien choisir votre matériel ?</a>
+                            <a href="<?= $this->url("ecig_home"); ?>">Bien choisir votre matériel</a>
                         </li>
                         <li>
                             <a href="#">Acheter votre matériel</a>
