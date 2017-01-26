@@ -20,7 +20,6 @@ $this->start('main_content');
     <tr>
         <th>Id</th>
         <th>Pseudo</th>
-        <th>Mot de passe</th>
         <th>Email</th>
         <th>Role</th>
         <th>Actions</th>
