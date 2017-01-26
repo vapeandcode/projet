@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Utilisateur']) ?>
+<?php $this->layout('layout', ['title' => 'Faq']) ?>
 
 <?php $this->start('main_content') ?>
 <h2>Foire aux questions</h2>

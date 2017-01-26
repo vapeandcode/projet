@@ -16,6 +16,11 @@ class UserController extends Controller
         $this->show('user/home');
     }
 
+    /*********************************************************************
+     *                METHOD POUR CONNECTION/DECONNECTION UTILISATEURS
+     *
+     ********************************************************************/
+
     public function loginFrom()
     {
         $this->show('user/login');
@@ -39,7 +44,8 @@ class UserController extends Controller
 
     public function logout()
     {
-        $this -> logUserOut();
+        unset($_SESSION['user']);
+        $this->show('default/home');
     }
 
     /*********************************************************************
