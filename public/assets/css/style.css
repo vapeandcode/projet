@@ -207,5 +207,18 @@ footer > h2 {
   background-color: rgb(106, 106, 106);
 }
 
+/* EFFET HOVER SUR IMAGES DE PRESENTATION */
+
+.effect-honey img {
+  box-shadow: 0px 0px 10px 12px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 12px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 12px rgba(119, 119, 119, 0.75);
+}
+
+.effect-honey img:hover {
+  box-shadow: 0px 0px 10px 12px rgba(221, 221, 221, 0.75);
+  -moz-box-shadow: 0px 0px 10px 12px rgba(221, 221, 221, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 12px rgba(221, 221, 221, 0.75);
+}
 
 
