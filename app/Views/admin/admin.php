@@ -20,7 +20,6 @@ $this->start('main_content');
     <tr>
         <th>Id</th>
         <th>Pseudo</th>
-        <th>Mot de passe</th>
         <th>Email</th>
         <th>Role</th>
         <th>Actions</th>
@@ -31,7 +30,6 @@ $this->start('main_content');
         <tr>
             <td><?php echo $listeUser[$i]['id']?></td>
             <td><?php echo $listeUser[$i]['username']?></td>
-            <td><?php echo $listeUser[$i]['password']?></td>
             <td><?php echo $listeUser[$i]['email']?></td>
             <td><?php echo $listeUser[$i]['role']?></td>
             <td>
