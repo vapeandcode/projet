@@ -31,7 +31,6 @@ $this->start('main_content');
         <tr>
             <td><?php echo $listeUser[$i]['id']?></td>
             <td><?php echo $listeUser[$i]['username']?></td>
-            <td><?php echo $listeUser[$i]['password']?></td>
             <td><?php echo $listeUser[$i]['email']?></td>
             <td><?php echo $listeUser[$i]['role']?></td>
             <td>
