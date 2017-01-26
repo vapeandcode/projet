@@ -34,12 +34,12 @@
                         <!--  SI ON A UNE SESSION D OUVERTE, ON AFFICHE -->
                     <?php } elseif (isset($_SESSION['user']['username'])) { ?>
                         <li><span class="glyphicon"><?php echo $_SESSION['user']['username'] ?></span></li>
-                        <li><a href="<?= $this->url("user_logout"); ?>"><span class="glyphicon"></span> Login</a></li>
+                        <li><a href="<?= $this->url("user_logout"); ?>"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     <?php }
                         if ($_SESSION['user']['role'] == "admin") { ?>
 
                         <!--  SI ON A UNE SESSION ADMIN D OUVERTE, ON AFFICHE -->
-                        <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon"></span> Administration </a></li>
                     <?php } ?>
                  </ul>
             </div>
