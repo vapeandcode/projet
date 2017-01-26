@@ -84,6 +84,24 @@ class AdminController extends Controller
         } else {
             $link = $_POST['link'];
         }
+
+        /*if (isset($_POST['picture']) || isset($_POST['schema']))
+        {
+            $filename = $_FILES['name'];
+            var_dump($_FILES);*/
+
+            /*$picture = new AdminModel();
+            $dir = __DIR__;
+            var_dump($dir);
+
+            $erase = 'app\Controller';
+            $change = 'public\assets\img\\img_article\\';
+            $imgDir = str_replace($erase, $change, $dir);
+            var_dump($imgDir);
+
+            $picture -> upload('picture', $imgDir . 'penelope', 1000000, array('png','gif','jpg','jpeg') );
+            var_dump('picture', $imgDir . $filename, 1000000, array('png','gif','jpg','jpeg'));*/
+        /*}*/
         // ON RECUPERE LE $_POST DANS UN TABLEAU POUR LE SOUMETTRE A LA METHOD.
         $data = array(
             'title' => $_POST['title'],

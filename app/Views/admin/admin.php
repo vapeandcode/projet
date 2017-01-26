@@ -73,3 +73,7 @@ $this->start('main_content');
     <p><input type="submit" name="submit" value="Envoyer"></p>
 </form>
 <?php $this->stop('main_content') ?>
+
+<?php $this->start('js') ?>
+<script src = "<?= $this->assetUrl('js/master.js') ?>"></script>
+<?php $this->stop('js') ?>
