@@ -3,7 +3,7 @@ $w_routes = array(
     //Page appelé par default au chargement d'index php
     ['GET', '/', 'Default#home', 'default_home'],
     /*********************************************************************
-     *                ROUTE ARTICLES
+     *                ROUTES ARTICLES
      *
      ********************************************************************/
     ['GET|POST', '/article/', 'Article#home', 'article_home'],
@@ -23,9 +23,16 @@ $w_routes = array(
     ['GET|POST', '/article/ecig/debutant/', 'Article#articlesDebutant', 'ecig_debutant'],
     ['GET|POST', '/article/ecig/intermediaire/', 'Article#articlesIntermediaire', 'ecig_intermediaire'],
     ['GET|POST', '/article/ecig/expert/', 'Article#articlesExpert', 'ecig_expert'],
+    
+    /*********************************************************************
+    *                 ROUTE  FAQ
+    *
+    *********************************************************************/
+
+    ['GET|POST', '/faq/', 'Faq#home', 'faq_home'],
 
     /*********************************************************************
-     *                ROUTE UTILISATEURS
+     *                ROUTES UTILISATEURS
      *
      ********************************************************************/
     ['GET|POST', '/user/', 'User#home', 'user_home'],
@@ -37,7 +44,7 @@ $w_routes = array(
 
     ['GET|POST', '/contact/', 'Contact#home', 'contact_home'],
     /*********************************************************************
-     *                ROUTE ADMINISTRATEUR
+     *                ROUTES ADMINISTRATEUR
      *
      ********************************************************************/
     ['GET|POST', '/admin/', 'Admin#admin', 'admin_users'],
