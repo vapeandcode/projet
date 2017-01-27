@@ -89,10 +89,14 @@ Le responsable publication est une personne physique ou une personne morale.<br 
 <h3>9. Droit applicable et attribution de juridiction.</h3>
 <div>
 <p>Tout litige en relation avec l’utilisation du site <a href="http://www.vapncode.com/" title="vap n code - www.vapncode.com">www.vapncode.com</a> est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de Paris.</p>
+</div>
 <h3>10. Les principales lois concernées.</h3>
+<div>
 <p>Loi n° 78-17 du 6 janvier 1978, notamment modifiée par la loi n° 2004-801 du 6 août 2004 relative à l'informatique, aux fichiers et aux libertés.</p>
 <p> Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique.</p>
+</div>
 <h3>11. Lexique.</h3>
+<div>
 <p>Utilisateur : Internaute se connectant, utilisant le site susnommé.</p>
 <p>Informations personnelles : « les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
 </div>
