@@ -245,12 +245,6 @@ p {
 }
 
 
-/* POSITIONNEMENT IMAGES EN DESKTOP */
-
-@media (min-width: 1024px) {
-  .effect-honey img {}
-}
-
 /* STYLE ARTICLE */
 
 .article {
