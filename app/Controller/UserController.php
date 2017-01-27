@@ -27,7 +27,7 @@ class UserController extends Controller
         $result = $userLog->login($_POST);
 
         // SI L'UTILISATEUR EST CONNECTE IL EST ENVOYE VERS LA PAGE SUCCES
-        if ($result == "login")
+        if ($result)
         {
             $this->show('user/loginSuccess');
         }
