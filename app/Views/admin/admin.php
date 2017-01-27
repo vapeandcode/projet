@@ -52,9 +52,9 @@ $this->start('main_content');
 <!-- FORMULAIRE QUI RENVOIE VERS LA PAGE ADDARTICLE -->
 <form id="addArticle" action="<?= $this->url('add_article') ?>" method="post">
     <p>Titre de l'article : <input type="text" name="title" value=""></p>
-    <p>Image(nom.extension) de l'article : <input type="text" name="description" value=""></p>
+    <p>Description : <input type="text" name="description" value=""></p>
     <p>Image schema (nom.extension)(eCiq seulement) de l'article : <input type="file" name="picture" value=""></p>
-    <p>Image schema (nom.extension)(eCiq seulement) de l'article : <input type="text" name="schema" value=""></p>
+    <p>Image schema (nom.extension)(eCiq seulement) de l'article : <input type="file" name="schema" value=""></p>
     <p>Lien source/video/... : <input type="text" name="link" value=""></p>
     <p>
         Categorie de l'article :

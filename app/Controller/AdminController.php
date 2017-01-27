@@ -111,7 +111,7 @@ class AdminController extends Controller
             'link' => $link,
             'type_id' => $_POST['type_id'],
             // ID = 1, pour le moment pour faire du test.
-            'users_id' => 1,
+            'users_id' => $_SESSION['user']['id'],
             // A ENLEVER CAR FAIL DE BDD LORS DE LA CREATION DE LA METHOD.
 //            'type_id1' => $_POST['type_id']
             // FIN DE FAIL.

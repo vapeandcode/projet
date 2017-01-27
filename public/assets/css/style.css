@@ -250,3 +250,19 @@ p {
 @media (min-width: 1024px) {
   .effect-honey img {}
 }
+
+/* STYLE ARTICLE */
+
+.article {
+  margin: 0 auto 30px;
+  width: 50%;
+  border: 1px solid;
+}
+
+.article > h2 {
+  text-align: center;
+}
+
+.imgArticle {
+  height: 200px;
+}

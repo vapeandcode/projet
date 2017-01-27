@@ -20,13 +20,12 @@ $w_routes = array(
     ['GET|POST', '/article/eliquid/tabac/', 'Article#articlesTabac', 'eliquid_tabac'],
     ['GET|POST', '/article/eliquid/gourmand/', 'Article#articlesGourmand', 'eliquid_gourmand'],
     ['GET|POST', '/article/eliquid/fruite/', 'Article#articlesFruite', 'eliquid_fruite'],
+
     // ROUTES ECIG
     ['GET|POST', '/article/ecig/', 'Article#ecigHome', 'ecig_home'],
     ['GET|POST', '/article/ecig/debutant/', 'Article#articlesDebutant', 'ecig_debutant'],
     ['GET|POST', '/article/ecig/intermediaire/', 'Article#articlesIntermediaire', 'ecig_intermediaire'],
     ['GET|POST', '/article/ecig/expert/', 'Article#articlesExpert', 'ecig_expert'],
-    
-    
 
     /*********************************************************************
      *                ROUTES UTILISATEURS
@@ -38,8 +37,8 @@ $w_routes = array(
     ['GET|POST', '/user/logout/', 'User#logout', 'user_logout'],
     ['GET|POST', '/user/inscription/', 'User#inscription', 'user_inscription'],  //Page avec le formulaire d'inscription
     ['GET|POST', '/user/createuser/', 'User#createUser', 'user_create_user'],    //Page requete d'inscription
-
     ['GET|POST', '/contact/', 'Contact#home', 'contact_home'],
+
     /*********************************************************************
      *                ROUTES ADMINISTRATEUR
      *
@@ -48,9 +47,6 @@ $w_routes = array(
     ['GET|POST', '/admin/delete_user/', 'Admin#deleteUser', 'delete_user'],
     ['GET|POST', '/admin/update_user/', 'Admin#updateFindUser', 'update_user_find'],
     ['GET|POST', '/admin/updateUser/', 'Admin#updateUser', 'update_user'],
-
     ['GET|POST', '/admin/add_article/', 'Admin#addArticle', 'add_article'],
-
-
 
 );

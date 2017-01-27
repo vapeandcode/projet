@@ -15,8 +15,7 @@ class ArticleModel extends Model
         if (!is_numeric($type_id)){
             return false;
         }
-
-        $sql = 'SELECT * FROM article WHERE type_id = ' . $type_id;
+        $sql = 'SELECT * FROM article WHERE type_id = ' . $type_id . ' ORDER BY id DESC';
 
         $sth = $this->dbh->prepare($sql);
         $sth->bindValue('type_id', $type_id);
