@@ -26,7 +26,10 @@ class LoginModel extends UsersModel
                 // CONNECTION DE L'UTILISATEUR
                 $userLogin->logUserIn($userData);
 
-                return "login";
+                return $userData;
+            } elseif ($userLogin->isValidLoginInfo($data['username'], $data['password']) == 0)
+            {
+                return false;
             }
         }
     }
