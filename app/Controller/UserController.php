@@ -16,11 +16,6 @@ class UserController extends Controller
         $this->show('user/home');
     }
 
-    /*********************************************************************
-     *                METHOD POUR CONNECTION/DECONNECTION UTILISATEURS
-     *
-     ********************************************************************/
-
     public function loginFrom()
     {
         $this->show('user/login');
@@ -31,7 +26,7 @@ class UserController extends Controller
         $userLog = new LoginModel();
         $result = $userLog->login($_POST);
 
-        // SI L'UTILISATEUR EST CONNECTE IL EST ENVOYE VERS LA PAGE SUCCESS
+        // SI L'UTILISATEUR EST CONNECTE IL EST ENVOYE VERS LA PAGE SUCCES
         if ($result == "login")
         {
             $this->show('user/loginSuccess');
@@ -44,8 +39,7 @@ class UserController extends Controller
 
     public function logout()
     {
-        unset($_SESSION['user']);
-        $this->show('default/home');
+        $this->show('user/logout');
     }
 
     /*********************************************************************
@@ -55,18 +49,12 @@ class UserController extends Controller
 
     public function inscription()
     {
-        $this->show('user/inscription'); // VUE DU FORMULAIRE D INSCRIPTION
+        $this->show('user/inscription');
     }
 
     public function createUser()
     {
-        // SI LE PASSWORD A AU MOINS 6 CARACTERE
-        if (strlen($_POST['password']) < 6)
-        {
-            $msg = "Mot de passe trop court, 6 caractère minimum.";
-            $this->show('user/inscription', ['msg' => $msg]);
-        }
-        // ON VERIFIE SI LE MAIL ET LE USERNAME EST DEJA DANS LA BDD
+        // ON VERIFIE SI LE MAIL OU LE USERNAME EST DEJA DANS LA BDD
         $ifExist = new UsersModel();
         $mailExist = $ifExist->emailExists($_POST['email']);
         $userExist = $ifExist->usernameExists($_POST['username']);
