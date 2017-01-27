@@ -91,7 +91,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">Contactez nous</a>
+                            <a href="#">Contactez nous &nbsp &nbsp &nbsp</a>
                         </li>
                     </ul>
                 </nav>
