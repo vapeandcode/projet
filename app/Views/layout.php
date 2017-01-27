@@ -77,7 +77,7 @@
                             <a href="<?= $this->url("eliquid_home"); ?>">Liquides</a>
                         </li>
                         <li>
-                            <a href="#">FAQ</a>
+                            <a href="<?= $this->url("article_faq"); ?>">FAQ</a>
                         </li>
                         <li>
                             <a href="<?= $this->url("ecig_home"); ?>">Bien choisir votre matériel</a>

@@ -5,10 +5,10 @@ namespace Controller;
 use Model\FaqModel;
 use \W\Controller\Controller;
 
-class ArticleController extends Controller
+class FaqController extends Controller
 {
     public function faqHome()
     {
-        $this->show('faq/home');
+        $this->show('article/faq/faq');
     }
 }
