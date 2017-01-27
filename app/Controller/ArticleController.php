@@ -7,7 +7,8 @@ use \W\Controller\Controller;
 
 class ArticleController extends Controller
 {
-    public function  home()
+
+    public function home()
     {
         $this->show('default/home');
     }
