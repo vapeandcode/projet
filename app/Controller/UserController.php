@@ -39,7 +39,8 @@ class UserController extends Controller
 
     public function logout()
     {
-        $this->show('user/logout');
+        unset($_SESSION['user']);
+        $this->show('default/home');
     }
 
     /*********************************************************************
