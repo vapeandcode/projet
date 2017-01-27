@@ -74,7 +74,7 @@
                 <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="<?= $this->url("eliquid_home"); ?>">Liquide</a>
+                            <a href="<?= $this->url("eliquid_home"); ?>">Liquides</a>
                         </li>
                         <li>
                             <a href="#">FAQ</a>
