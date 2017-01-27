@@ -4,7 +4,7 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
  <script>
-  $( function() {
+  $( function() { 
     var icons = {
       header: "ui-icon-circle-arrow-e",
       activeHeader: "ui-icon-circle-arrow-s"
