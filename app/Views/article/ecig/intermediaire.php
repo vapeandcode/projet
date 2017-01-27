@@ -1,11 +1,12 @@
 <?php $this->layout('layout', ['title' => 'ecig intermediaire']);
 $this->start('main_content');
 ?>
-    <h2>E-CIG INTERMEDIAIRES</h2>
+    <div class="center">
+    <h2>E-CIG CONNAISSEURS</h2>
     <p>
         Un peu plus évolués ces kits vous permettrons de vapoter plus longtemps.De plus vous pourrez contrôler la température,changer la résistance et effectuer tous les réglages nécessaires.
     </p>
-
+    </div>
 <?php for ($i=0; $i<count($listeArticle); $i++) { ?>
 
     <div class="intermediaire article">
