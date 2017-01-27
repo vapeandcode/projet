@@ -85,6 +85,9 @@
                         <li>
                             <a href="#">Acheter votre matériel</a>
                         </li>
+                         <li>
+                            <a href="#">Mentions légales</a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
