@@ -7,6 +7,11 @@ use \W\Controller\Controller;
 
 class ArticleController extends Controller
 {
+    public function  home()
+    {
+        $this->show('default/home');
+    }
+
     public function ecigHome()
     {
         $this->show('article/ecig/home');

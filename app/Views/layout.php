@@ -40,7 +40,7 @@
                         if ($_SESSION['user']['role'] == "admin") { ?>
 
                         <!--  SI ON A UNE SESSION ADMIN D OUVERTE, ON AFFICHE -->
-                        <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon"></span> Administration </a></li>
+                        <li><a href="<?= $this->url("admin_users"); ?>"><span class="glyphicon"></span> Administration </a></li>
                     <?php }} ?>
                  </ul>
             </div>
@@ -84,6 +84,9 @@
                         </li>
                         <li>
                             <a href="#">Acheter votre matériel</a>
+                        </li>
+                         <li>
+                            <a href="#">Mentions légales</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
