@@ -2,6 +2,9 @@
 
 <?php $this->start('main_content') ?>
 
+<video playsinline autoplay muted loop poster="smoke.jpg" id="bgvid">
+    <source src="smoke.webm" type="video/webm">
+    </video>
 	<h4>Qui sommes nous ?</h4>
       <p>
         Code N Vape est un projet destiné a vous accompagner dans le monde merveilleux de la vape.
@@ -47,4 +50,5 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 <?php $this->stop('main_content') ?>
