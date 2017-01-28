@@ -45,20 +45,36 @@ $this->start('main_content');
         <p><a href="<?php echo $listeArticle[$i]['link']?>">Lien youtube</a></p>
 
         <?php if (isset($_SESSION['user']['username'])) { ?>
-        <div class="accordion">
-            <p>Votre avis nous intéresse</p>
-            <div>
-                <p>Ajouter un commentaire</p>
-                <!-- FORMULAIRE QUI RENVOIE VERS LA PAGE ADDCOMMENT -->
-                <form id="addComment" action="<?= $this->url('add_article') ?>" method="post">
-                    <p><input type="hidden" name="author" value="<?= $_SESSION['user']['username'] ?>"></p>
-                    <p><textarea id="texte" name="text" rows="25" ></textarea></p>
-                    <p><input type="hidden" name="article_id" value="<?= $listeArticle[$i]['id'] ?>"></p>
-                    <p><input type="hidden" name="user_id" value="<?= $_SESSION['user']['id'] ?>"></p>
-                    <p><input type="submit" name="submit" value="Envoyer"></p>
-                </form>
+            <!-- Button trigger modal -->
+            <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Votre avis nous intéresse
+                </button></p>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <!-- FORMULAIRE QUI RENVOIE VERS LA PAGE ADDCOMMENT -->
+                            <form id="addComment" action="<?= $this->url('add_article') ?>" method="post">
+                                <p><input type="hidden" name="author" value="<?= $_SESSION['user']['username'] ?>"></p>
+                                <p><textarea id="texte" name="text" rows="25" ></textarea></p>
+                                <p><input type="hidden" name="article_id" value="<?= $listeArticle[$i]['id'] ?>"></p>
+                                <p><input type="hidden" name="user_id" value="<?= $_SESSION['user']['id'] ?>"></p>
+                                <p><input type="submit" name="submit" value="Envoyer"></p>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
         <?php } ?>
     </div>
 <?php } ?>
