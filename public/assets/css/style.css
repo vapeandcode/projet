@@ -229,7 +229,8 @@ p {
  .menthol img,
  .tabac img,
  .gourmand img,
- .fruite img {
+ .fruite img
+  {
    max-width: 100%;
    height: auto;
  }
@@ -257,7 +258,10 @@ p {
   margin: 0 auto 30px;
   width: 50%;
   border: 1px solid;
+  overflow: hidden;
 }
+
+
 
 .article > h2 {
   text-align: center;
