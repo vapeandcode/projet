@@ -42,7 +42,7 @@ $this->start('main_content');
         </p>
 
         <p><?php echo $listeArticle[$i]['description']?></p>
-        <p><?php echo $listeArticle[$i]['link']?></p>
+        <p><a href="<?php echo $listeArticle[$i]['link']?>">Lien youtube</a></p>
 
         <?php if (isset($_SESSION['user']['username'])) { ?>
         <div class="accordion">
