@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
 
     <!-- TinyMce -->
-    <script type="text/javascript" src="<?= $this->assetUrl('tinymce/tinymce.js') ?>"></script>
+    <script type="text/javascript" src="<?= $this->assetUrl('tinymce/js/tinymce/tinymce.js') ?>"></script>
     <script type="text/javascript">
         tinymce.init({
             selector: 'textarea',
