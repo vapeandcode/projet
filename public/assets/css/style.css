@@ -226,7 +226,13 @@ p {
 
 
 /* MISE EN PAGE ET EFFET HOVER SUR IMAGES DE PRESENTATION */
-
+ .menthol img,
+ .tabac img,
+ .gourmand img,
+ .fruite img {
+   max-width: 100%;
+   height: auto;
+ }
 .effect-honey img {
   display: block;
   max-width: 100%;
