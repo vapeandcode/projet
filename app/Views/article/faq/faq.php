@@ -3,21 +3,10 @@
 <?php $this->start('main_content') ?>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
- <script>
-  $( function() { 
-    var icons = {
-      header: "ui-icon-circle-arrow-e",
-      activeHeader: "ui-icon-circle-arrow-s"
-    };
+  <script>
+  $( function() {
     $( "#accordion" ).accordion({
-      icons: icons
-    });
-    $( "#toggle" ).button().on( "click", function() {
-      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
-        $( "#accordion" ).accordion( "option", "icons", null );
-      } else {
-        $( "#accordion" ).accordion( "option", "icons", icons );
-      }
+      heightStyle: "content"
     });
   } );
   </script>
@@ -27,7 +16,7 @@
 <h3>La cigarette électronique c'est quoi ?</h3>
 <div>
 <p>La cigarette électronique reproduit les sensations d'une cigarette classique. Elle est composée d'une batterie et d'un clearomiseur permettant d'accueillir le eliquide destiné à être vaporisé. Lors de l'aspiration, le eliquide, mélangé à l'air inspiré, est diffusé sous forme de vapeur. reproduisant la fumée d'une cigarette.</p>
-<p>Selon la réglementation de l’AFSSAPS, nous vous rappelons que la cigarette électronique n’est pas un médicament, qu’elle n’est pas vendue pour arrêter de fumer et est interdite aux moins de 18 ans.</p>
+
 </div>
 <h3>Quels sont les avantages de la cigarette éléctronique ?</h3>
 <div>
@@ -46,7 +35,7 @@
 <h3>Pourquoi passer à la cigarette éléctronique ?</h3>
 <div>
 <p>Parce que vous êtes fumeur et que vous souhaitez vous libérer de l’addiction au tabac et à la cigarette. Si vous ne fumez pas, ne vapotez pas.
-Une étude récente réalisée par le cabinet d'audit financier Ernst & Young sur le marché de la cigarette électronique à mis en évidence que la première motivation des fumeurs est la protection de la santé. 51% des vapoteurs utilisent la cigarette électronique parce qu'elle est moins nocive que la cigarette classique. 49 % parce que la cigarette électronique les aide à réduire leur consommation de cigarette. Le prix est aussi une motivation en particulier dans les pays ou le tabac est fortement taxé.
+ La première motivation des fumeurs est la protection de la santé. 51% des vapoteurs utilisent la cigarette électronique parce qu'elle est moins nocive que la cigarette classique. 49 % parce que la cigarette électronique les aide à réduire leur consommation de cigarette. Le prix est aussi une motivation en particulier dans les pays ou le tabac est fortement taxé.
 Source: vapingpost.com</p>
 </div>
 <h3>La cigarette éléctronique est-elle plus nocive que le tabac ?</h3>
