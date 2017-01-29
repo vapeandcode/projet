@@ -12,6 +12,52 @@ $this->start('main_content');
             return false;
         });
     });
+    /*********************************************************************
+     *                SCRIPT LIGHTBOX POUR LES IMAGES ARTICLE
+     *
+     ********************************************************************/
+    window.onload = function () {
+        // document.getElementById('lightB').style.display='none';
+
+        // BOUCLE QUI FAIT APPARAITTRE L OVERLAY //
+        var imgGal = document.querySelectorAll('.imgArticle');
+        for (var i = 0; i < imgGal.length; i++) {
+            imgGal[i].onclick = function () {
+
+                CreatDiv (); //APPEL FUNCTION CREATION DIV
+                hide(); // APPEL FUNCTION SUPPRESSION DIV
+
+                // DONNE L ATTRIBU SRC DE L IMG CLIQUER //
+                document.getElementById('imgLight').setAttribute("src", this.getAttribute("src"));
+
+                // FAIT APPARAITTRE LA DIV //
+                document.getElementById('lightB').style.display='block';
+            };
+        }
+
+        // CREE UN DIV AU CLIC SUR IMG //
+        function CreatDiv () {
+            var div = document.createElement('div');
+
+            //DONNE L ID A LA DIV
+            div.setAttribute('id', 'lightB');
+
+            //DONNE LA CLASS A LA DIV
+            div.classList.add('lightBox');
+
+            // INSERT LA BALISE IMG DANS LA DIV
+            div.innerHTML = '<img id="imgLight" src="">';
+            document.body.appendChild(div);
+        }
+
+
+        // SUPPRIME LA DIV CREE AU CLIC SU L OVERLAY //
+        function hide() {
+            document.getElementById('lightB').onclick = function () {
+                document.getElementById('lightB').remove();
+            };
+        }
+    };
 </script>
 
 <div class="center">

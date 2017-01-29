@@ -12,6 +12,7 @@ $this->start('main_content');
             return false;
         });
     });
+
 </script>
 
 <div class="center">
