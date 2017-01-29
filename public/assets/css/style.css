@@ -271,6 +271,13 @@ p {
   height: 200px;
 }
 
+/*STYLE BOUTON SUBMIT COMMENTAIRES*/
+#buttontinymce {
+  background-color: deepskyblue;
+  color: white;
+  padding: 1em;
+}
+
 /* STYLE BOUTONS CONTACT */
 .btn-link {
 	color:rgba(255,255,255,.8);

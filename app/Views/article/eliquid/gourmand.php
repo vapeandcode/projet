@@ -53,7 +53,7 @@ $this->start('main_content');
                                 <!--probleme avec article_id, toujours meme numero en bdd--><!--PROBLEME RESOLU-->
                                 <p><input type="hidden" name="article_id" id="to"></p>
                                 <p><input type="hidden" name="users_id" value=""></p>
-                                <p><input type="submit" name="submit" value="Envoyer"></p>
+                                <p><input id="buttontinymce" type="submit" name="submit" value="Envoyer"></p>
                             </form>
                         </div>
                     </div>
