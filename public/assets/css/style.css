@@ -276,7 +276,7 @@ p {
 	color:rgba(255,255,255,.8);
 }
 .btn-link:hover, .btn-link:focus, .btn-link:active {
-	color:#fff
+	color:#fff;
 }
 
 /* Query 1024 px */ 
