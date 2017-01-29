@@ -271,6 +271,14 @@ p {
   height: 200px;
 }
 
+/* STYLE BOUTONS CONTACT */
+.btn-link {
+	color:rgba(255,255,255,.8);
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+	color:#fff
+}
+
 /* Query 1024 px */ 
 @media (min-width: 1280px) {
 
