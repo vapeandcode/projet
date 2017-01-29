@@ -40,7 +40,7 @@ $w_routes = array(
     ['GET|POST', '/user/logout/', 'User#logout', 'user_logout'],
     ['GET|POST', '/user/inscription/', 'User#inscription', 'user_inscription'],  //Page avec le formulaire d'inscription
     ['GET|POST', '/user/createuser/', 'User#createUser', 'user_create_user'],    //Page requete d'inscription
-    ['GET|POST', '/contact/', 'Contact#home', 'contact_home'],
+    ['GET|POST', '/contact/', 'Contact#contactHome', 'contact_contact'],
 
     /*********************************************************************
      *                ROUTES ADMINISTRATEUR
