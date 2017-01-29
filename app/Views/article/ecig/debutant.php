@@ -1,27 +1,6 @@
 <?php $this->layout('layout', ['title' => 'ecig debutant']);
 $this->start('main_content');
 ?>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $( function() {
-            var icons = {
-                header: "ui-icon-circle-arrow-e",
-                activeHeader: "ui-icon-circle-arrow-s"
-            };
-            $( "#accordion" ).accordion({
-                icons: icons
-            });
-            $( "#toggle" ).button().on( "click", function() {
-                if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
-                    $( "#accordion" ).accordion( "option", "icons", null );
-                } else {
-                    $( "#accordion" ).accordion( "option", "icons", icons );
-                }
-            });
-        } );
-    </script>
-
     <div class="center">
     <h2>E-CIG DÉBUTANTS</h2>
     <p>
@@ -60,11 +39,12 @@ $this->start('main_content');
                         </div>
                         <div class="modal-body">
                             <!-- FORMULAIRE QUI RENVOIE VERS LA PAGE ADDCOMMENT -->
-                            <form id="addComment" action="<?= $this->url('add_article') ?>" method="post">
-                                <p><input type="hidden" name="author" value="<?= $_SESSION['user']['username'] ?>"></p>
-                                <p><textarea id="texte" name="text" rows="25" ></textarea></p>
+                            <form id="addComment" action="<?= $this->url('add_comment') ?>" method="post">
+                                <p><input type="hidden" name="author" value=""></p>
+                                <p><textarea id="texte" name="content" rows="25" ></textarea></p>
+                                <!--probleme avec article_id, toujours meme numero en bdd-->
                                 <p><input type="hidden" name="article_id" value="<?= $listeArticle[$i]['id'] ?>"></p>
-                                <p><input type="hidden" name="user_id" value="<?= $_SESSION['user']['id'] ?>"></p>
+                                <p><input type="hidden" name="users_id" value=""></p>
                                 <p><input type="submit" name="submit" value="Envoyer"></p>
                             </form>
                         </div>
