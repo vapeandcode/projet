@@ -18,7 +18,7 @@
     <div class="row main">
         <div class="panel-heading">
             <div class="panel-title text-center">
-                <h1 class="title">INSCRIPTION</h1>
+                <h2 class="title">INSCRIPTION</h2>
                 <hr />
             </div>
         </div>
