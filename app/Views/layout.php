@@ -117,7 +117,7 @@
 		<section>
 			<?= $this->section('main_content') ?>
 		</section>
-
+        <div class="footer navbar-fixed-bottom">
         <footer>
             <h2>Nos réseaux sociaux</h2>
             <a href="https://twitter.com/?lang=fr">
@@ -138,6 +138,7 @@
             <p>2016 - 2017 Tout droits réservés ©</p>
 
         </footer>
+        </div>
 	</div>
 </body>
 </html>
