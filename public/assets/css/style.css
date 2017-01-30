@@ -263,11 +263,6 @@ p, .logform {
     max-width: 100%;
 }
 
-.effect-honey img:hover {
-    transform: scale(1.2);
-}
-
-
 /* STYLE ARTICLE */
 
 .article {
@@ -294,7 +289,6 @@ p, .logform {
 .imgArticle:hover {
     border: 2px solid rgb(0, 161, 235);
     cursor: zoom-in;
-    transform: scale(1.2);
 }
 
 .lightBox {
