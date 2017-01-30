@@ -21,19 +21,19 @@
   <!-- Wrapper des slides du carousel -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://lorempixel.com/400/200/" alt="Chania">
+      <img src="https://resize.over-blog.com/400x400-ct.jpg?http://img.over-blog-kiwi.com/0/91/03/66/20160808/ob_b1213d_idees-recues.jpg" alt="image carousel stop aux idées reçues">
     </div>
 
     <div class="item">
-      <img src="http://lorempixel.com/400/200/sports/" alt="Chania">
+      <img src="https://lh3.googleusercontent.com/proxy/K4LWoH8Zquu3uu-V9AmKa8HdDRJrpvbt0rZBZvpVg6ygSCSWtePSuC65vnhGv5zERG7wg7CF82p875CjMGKLe1pqEshFrjnXp_UIsst9AiSZPKjmwQvvqHlAvf4=s426" alt="image carousel arretez de fumer">
     </div>
 
     <div class="item">
-      <img src="http://lorempixel.com/400/200/sports/1/Dummy-Text/" alt="Flower">
+      <img src="https://s-media-cache-ak0.pinimg.com/736x/fb/c6/fc/fbc6fc8a333fe36b9dbaf18e049e086d.jpg" alt="image carousel santé Vape">
     </div>
 
     <div class="item">
-      <img src="http://lorempixel.com/g/400/200/" alt="Flower">
+      <img src="https://pbs.twimg.com/profile_images/527430043178655744/1TBAzFxB.jpeg" alt="image carousel stop fumer , commencez a vaper">
     </div>
   </div>
 
