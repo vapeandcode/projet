@@ -242,29 +242,32 @@ p, .logform {
 
 
 /* MISE EN PAGE ET EFFET HOVER SUR IMAGES DE PRESENTATION */
- .menthol img,
+/* .menthol img,
  .tabac img,
  .gourmand img,
  .fruite img
   {
    max-width: 100%;
    height: auto;
+ }*/
+
+ .effect-honey {
+     background-color: rgba(208, 219, 217, 0.34);
+     padding: 20px;
+     border-radius: 1%;
+     box-shadow: 0px 0px 10px 3px rgba(31, 30, 30, 0.75);
  }
+
 .effect-honey img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 0px 10px 12px rgba(119, 119, 119, 0.75);
-  -moz-box-shadow: 0px 0px 10px 12px rgba(119, 119, 119, 0.75);
-  -webkit-box-shadow: 0px 0px 10px 12px rgba(119, 119, 119, 0.75);
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .effect-honey img:hover {
-  box-shadow: 0px 0px 10px 12px rgba(221, 221, 221, 0.75);
-  -moz-box-shadow: 0px 0px 10px 12px rgba(221, 221, 221, 0.75);
-  -webkit-box-shadow: 0px 0px 10px 12px rgba(221, 221, 221, 0.75);
+    transform: scale(1.2);
 }
 
 
@@ -287,12 +290,13 @@ p, .logform {
 }
 
 .imgArticle {
-  height: 200px;
+    height: 200px;
 }
 
 .imgArticle:hover {
     border: 2px solid rgb(0, 161, 235);
     cursor: zoom-in;
+    transform: scale(1.2);
 }
 
 .lightBox {

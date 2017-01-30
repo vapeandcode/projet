@@ -69,7 +69,7 @@ $this->start('main_content');
 
 <!--BOUCLE POUR AFFICHER LES ELEMENTS ET LE BOUTON MODAL POUR LES COMMENTAIRES SUR CHAQUE ARTICLE-->
 <?php for ($i=0; $i<count($listeArticle); $i++) { ?>
-    <div class="debutant article">
+    <div class="intermediaire article">
         <p><h2><?php echo $listeArticle[$i]['title']?></h2></p>
 
         <p>
