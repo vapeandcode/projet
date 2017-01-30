@@ -175,11 +175,12 @@ class AdminController extends Controller
     public function deleteArticle()
     {
         $query = new AdminModel();
-        $result = $query ->articleDelete($_POST['userId']);
+        $result = $query ->articleDelete($_POST['articleId']);
         if ($result == true)
         {
             // On renvoi le METHOD admin() pour re-afficher la page avec la liste des utilisateur
-            $this->admin();
+//            $this->admin();
+            echo "gg cest suppr";
         }
     }
 }
