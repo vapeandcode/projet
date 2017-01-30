@@ -105,5 +105,57 @@ class AdminModel extends Model
             return $query;
         }
     }
+
+    /*********************************************************************
+     *                METHOD POUR UPDATE LES ARTICLES
+     *
+     ********************************************************************/
+
+    // Method qui permet de recuperer un article par son ID pour pouvoir l'UPDATE
+    public function articleFindUpdate($id)
+    {
+        $this->setTable('article');
+        $query = $this->find($id);
+        if ($query == false)
+        {
+            echo "Une erreur est survenue lors de la recherche.";
+        } else
+        {
+            return $query;
+        }
+    }
+
+    public function adminUpdateArticle ($data, $id)
+    {
+        $this->setTable('article');
+        $query = $this->update($data, $id, $stripTags = true);
+        if ($query == false)
+        {
+            echo "Une erreur est survenue lors de la mise a jour.";
+        } else
+        {
+            return $query;
+        }
+    }
+
+    /*********************************************************************
+     *                METHOD POUR DELETE LES ARTICLES
+     *
+     ********************************************************************/
+
+    // Method qui permet de supprimer un utilisateur depuis son ID.
+    public function articleDelete($id)
+    {
+        // Definie la table w_users pour la method findAll().
+        $this->setTable('users');
+        $query = $this->delete($id);
+        if ($query == false)
+        {
+            echo "Une erreur est survenue lors de la suppression.";
+        } else
+        {
+            return $query;
+        }
+    }
 }
 ?>

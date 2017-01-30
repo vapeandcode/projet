@@ -51,7 +51,7 @@ class AdminController extends Controller
     {
         $query = new AdminModel();
         $result = $query -> adminFindUpdate($_POST['userId']);
-        $this->show('admin/update', ['listeUser' => $result]);
+        $this->show('admin/update_user', ['listeUser' => $result]);
     }
 
     public function updateUser()
@@ -85,23 +85,6 @@ class AdminController extends Controller
             $link = $_POST['link'];
         }
 
-        /*if (isset($_POST['picture']) || isset($_POST['schema']))
-        {
-            $filename = $_FILES['name'];
-            var_dump($_FILES);*/
-
-            /*$picture = new AdminModel();
-            $dir = __DIR__;
-            var_dump($dir);
-
-            $erase = 'app\Controller';
-            $change = 'public\assets\img\\img_article\\';
-            $imgDir = str_replace($erase, $change, $dir);
-            var_dump($imgDir);
-
-            $picture -> upload('picture', $imgDir . 'penelope', 1000000, array('png','gif','jpg','jpeg') );
-            var_dump('picture', $imgDir . $filename, 1000000, array('png','gif','jpg','jpeg'));*/
-        /*}*/
         // ON RECUPERE LE $_POST DANS UN TABLEAU POUR LE SOUMETTRE A LA METHOD.
         $data = array(
             'title' => $_POST['title'],
@@ -110,11 +93,8 @@ class AdminController extends Controller
             'schema' => $_POST['schema'],
             'link' => $link,
             'type_id' => $_POST['type_id'],
-            // ID = 1, pour le moment pour faire du test.
-            'users_id' => $_SESSION['user']['id'],
-            // A ENLEVER CAR FAIL DE BDD LORS DE LA CREATION DE LA METHOD.
-//            'type_id1' => $_POST['type_id']
-            // FIN DE FAIL.
+            'users_id' => $_SESSION['user']['id']
+
         );
         $query = new AdminModel();
         $result = $query -> adminAddArticle($data);
@@ -122,6 +102,84 @@ class AdminController extends Controller
         {
             echo "Article ajouté !";
             $this ->admin();
+        }
+    }
+
+    /*********************************************************************
+     *                UPDATE ARTICLE
+     *
+     ********************************************************************/
+
+    public function updateFindArticle()
+    {
+        $query = new AdminModel();
+        $result = $query -> articleFindUpdate($_POST['articleId']);
+        $this->show('admin/update_article', ['listeArticle' => $result]);
+    }
+
+    public function updateArticle()
+    {
+//            CONDITION SI PAS DE CHANGEMENT SUR IMAGE
+        if ($_POST['picture'] == '') {
+
+            if ($_POST['schema'] == '') {
+//                SI AUCUN RENSEIGNEMENT D IMAGE
+                $data = array(
+                    'title' => $_POST['title'],
+                    'description' => $_POST['description'],
+                    'link' => $_POST['link'],
+                    'type_id' => $_POST['type_id']
+                );
+            } else {
+//              SI QUE SCHEMA
+                $data = array(
+                    'title' => $_POST['title'],
+                    'description' => $_POST['description'],
+                    'schema' => $_POST['schema'],
+                    'link' => $_POST['link'],
+                    'type_id' => $_POST['type_id']
+                );
+            }
+        } elseif ($_POST['schema'] == '') {
+//          SI QUE PICTURE
+            $data = array(
+                'title' => $_POST['title'],
+                'description' => $_POST['description'],
+                'picture' => $_POST['picture'],
+                'link' => $_POST['link'],
+                'type_id' => $_POST['type_id']
+            );
+        } else {
+//            SINON ON RENSEIGNE TOUT
+            $data = array(
+                'title' => $_POST['title'],
+                'description' => $_POST['description'],
+                'picture' => $_POST['picture'],
+                'schema' => $_POST['schema'],
+                'link' => $_POST['link'],
+                'type_id' => $_POST['type_id']
+            );
+        }
+        var_dump($data);
+        $query = new AdminModel();
+        $result = $query -> adminUpdateArticle($data, $_POST['articleId']);
+        if ($result)
+        {
+            echo "GG garcon tu nest plus ligne 95 !";
+        } else
+        {
+            $this->show('w_errors/404');
+        }
+    }
+
+    public function deleteArticle()
+    {
+        $query = new AdminModel();
+        $result = $query ->articleDelete($_POST['userId']);
+        if ($result == true)
+        {
+            // On renvoi le METHOD admin() pour re-afficher la page avec la liste des utilisateur
+            $this->admin();
         }
     }
 }

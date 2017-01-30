@@ -77,12 +77,12 @@ $this->start('main_content');
                 if ($_SESSION['user']['role'] == 'admin') { ?>
 
             <div class="buttonAdminDiv">
-                <form class="FormBtn" action="<?= $this->url('update_user_find') ?>" method="post">
-                <input type="hidden" name="userId" value="<?php echo $listeArticle[$i]['id'] ?>">
-                <button type="submit" name="userUpdate" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+                <form class="FormBtn" action="<?= $this->url('update_article_find') ?>" method="post">
+                    <input type="hidden" name="articleId" value="<?php echo $listeArticle[$i]['id'] ?>">
+                    <button type="submit" name="userUpdate" class="btn btn-warning"><i class="fa fa-edit"></i></button>
                 </form>
-                <form class="FormBtn" action="<?= $this->url('delete_user') ?>" method="post">
-                    <input type="hidden" name="userId" value="<?php echo $listeArticle[$i]['id'] ?>">
+                <form class="FormBtn" action="<?= $this->url('delete_article') ?>" method="post">
+                    <input type="hidden" name="articleId" value="<?php echo $listeArticle[$i]['id'] ?>">
                     <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>
                 </form>
             </div>
