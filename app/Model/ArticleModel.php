@@ -23,4 +23,16 @@ class ArticleModel extends Model
 
         return $sth->fetchAll();
     }
+
+    public function viewComment()
+    {
+
+        $sql = 'SELECT comment.id, author, content, date, article_id, comment.users_id FROM comment INNER JOIN article ON comment.article_id = article.id WHERE article.id = comment.article_id ORDER BY date DESC';
+
+        $sth = $this->dbh->prepare($sql);
+        $sth->bindValue('article_id', 'article.id');
+        $sth->execute();
+
+        return $sth->fetchAll();
+    }
 }

@@ -5,7 +5,7 @@ $this->start('main_content');
 <!--RECUPERATION DE L'ID DE L'ARTICLE QUAND ON CLIQUE SUR LE BOUTON DU MODAL-->
 <script>
     $(document).ready(function(){
-        $('.btn').click(function(){
+        $('.commentBtn').click(function(){
             $("#myModal").modal();
             var id = $(this).attr('id');
             $("#to").val(id);
@@ -87,7 +87,7 @@ $this->start('main_content');
         <!--SI L'UTILISATEUR EST BIEN CONNECTE AFFICHAGE DU BOUTON MODAL POUR LES COMMENTAIRES-->
         <?php if (isset($_SESSION['user']['username'])) { ?>
             <!-- Button trigger modal -->
-            <p><button id="<?= $listeArticle[$i]['id'] ?>" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            <p><button id="<?= $listeArticle[$i]['id'] ?>" type="button" class="btn btn-primary btn-lg commentBtn" data-toggle="modal" data-target="#myModal">
                     Votre avis nous intéresse
                 </button></p>
 
@@ -115,6 +115,30 @@ $this->start('main_content');
                 </div>
             </div>
         <?php } ?>
+
+        <!--BOUCLE POUR AFFICHER TOUS LES COMMENTAIRES PAR ARTICLE DANS UN MODEL BOOTSTRAP POUR COMMENTAIRES-->
+        <p><?php
+            for ($q=0; $q<count($listeComment); $q++) {
+                if (isset($listeComment[$q]['article_id'])) {
+                    if ($listeArticle[$i]['id'] == $listeComment[$q]['article_id']) { ?>
+                        <div class="container">
+                             <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <strong><?= $listeComment[$q]['author'] ?></strong> <span class="text-muted"><?= $listeComment[$q]['date'] ?></span>
+                                        </div>
+                                        <div class="panel-body">
+                                            <span id="blacktext"><?= $listeComment[$q]['content'] ?></span>
+                                        </div><!-- /panel-body -->
+                                    </div><!-- /panel panel-default -->
+                                </div><!-- /col-sm-5 -->
+                            </div><!-- /row -->
+                        </div><!-- /container -->;
+                    <?php echo "<br>"; }
+                }
+            } ?>
+        </p>
     </div>
 <?php } ?>
 

@@ -17,6 +17,10 @@ body {
   background-image: url(science.png);
 }
 
+#blacktext {
+    color: black;
+}
+
 h1,
 h2,
 h3,
