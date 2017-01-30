@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 30 Janvier 2017 à 08:54
+-- Généré le :  Lun 30 Janvier 2017 à 15:19
 -- Version du serveur :  5.7.14
 -- Version de PHP :  7.0.10
 
@@ -83,8 +83,9 @@ INSERT INTO `article` (`id`, `title`, `description`, `picture`, `schema`, `link`
 
 CREATE TABLE `comment` (
   `id` int(11) NOT NULL,
-  `content` varchar(255) DEFAULT NULL,
-  `date` datetime DEFAULT NULL,
+  `author` varchar(45) NOT NULL,
+  `content` text,
+  `date` datetime DEFAULT CURRENT_TIMESTAMP,
   `article_id` int(11) DEFAULT NULL,
   `users_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
