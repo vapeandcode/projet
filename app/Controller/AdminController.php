@@ -131,7 +131,7 @@ class AdminController extends Controller
                     'type_id' => $_POST['type_id']
                 );
             } else {
-//              SI QUE SCHEMA
+//              SI QUE SCHEMA !
                 $data = array(
                     'title' => $_POST['title'],
                     'description' => $_POST['description'],
