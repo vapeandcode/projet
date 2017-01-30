@@ -192,6 +192,9 @@ footer>h2 {
   width: 65px;
 }
 
+.marge {
+margin-top: 60px;
+}
 
 /* STYLE NAV_ECIG */
 
@@ -337,6 +340,7 @@ p, .logform {
   margin: auto;
   margin-top: 20px;
   text-align: center;
+}
 
 /* Query 1024 px */ 
 @media (min-width: 1280px) {
