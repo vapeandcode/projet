@@ -114,7 +114,7 @@
                 </nav>
             </div>
         </header>
-		<section>
+		<section class="contentMain">
 			<?= $this->section('main_content') ?>
 		</section>
         

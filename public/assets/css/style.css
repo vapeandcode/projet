@@ -78,10 +78,10 @@ h6 {
 /* STYLE HEADER LOGO */
 
 .headPage {
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(237, 235, 205, 0.13);
 }
 
 .headPage>img {
@@ -163,19 +163,23 @@ h6 {
   font-family: 'Indie Flower', cursive;
 }
 
+.contentMain {
+    background-color: rgba(237, 235, 205, 0.13);
+    padding: 20px;
+}
+
 
 /* FOOTER STYLE */
 
 footer {
-  
-  padding-top: 10px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  color: white;
-  text-align: center;
-  border-radius: 90px 90px 0 0;
-  margin: auto;
+    padding-top: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(237, 235, 205, 0.13);
 }
 
 footer p {
@@ -267,10 +271,13 @@ p, .logform {
 /* STYLE ARTICLE */
 
 .article {
-  margin: 0 auto 30px;
-  width: 50%;
-  border: 1px solid;
-  overflow: hidden;
+    font-size: 1.5em;
+    margin: 0 auto 20px;
+    width: 70%;
+    background-color: rgba(208, 219, 217, 0.34);
+    padding: 20px;
+    border-radius: 1%;
+    box-shadow: 0px 0px 10px 3px rgba(31, 30, 30, 0.75);
 }
 
 
@@ -321,9 +328,10 @@ p, .logform {
 
 /*STYLE BOUTON SUBMIT COMMENTAIRES*/
 #buttontinymce {
-  background-color: deepskyblue;
-  color: white;
-  padding: 1em;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    padding: 2em;
 }
 
 /* STYLE BOUTONS CONTACT */
