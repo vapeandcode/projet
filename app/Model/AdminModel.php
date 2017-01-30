@@ -147,7 +147,7 @@ class AdminModel extends Model
     public function articleDelete($id)
     {
         // Definie la table w_users pour la method findAll().
-        $this->setTable('users');
+        $this->setTable('article');
         $query = $this->delete($id);
         if ($query == false)
         {
