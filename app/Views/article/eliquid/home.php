@@ -21,7 +21,8 @@ $this->start('main_content');
                 <figure class="effect-honey">
                     <figcaption>
                         <h2>Tabacs</h2>
-                        <a href="<?= $this->url("eliquid_tabac"); ?>"><img src="<?= $this->assetUrl('img/img_article/gainsbar.jpg') ?>" alt="e-liquide-gout-tabac-gainsbar"/></a>
+                        <a href="<?= $this->url("eliquid_tabac"); ?>"><img src="<?= $this->assetUrl('img/img_article/marlboro.jpg') ?>" alt="e-liquide-gout-tabac-marlboro
+"/></a>
                     </figcaption>
                 </figure>
             </div>

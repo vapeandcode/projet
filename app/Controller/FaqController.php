@@ -2,7 +2,7 @@
 
 namespace Controller;
 
-use Model\FaqModel;
+
 use \W\Controller\Controller;
 
 class FaqController extends Controller

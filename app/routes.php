@@ -10,8 +10,15 @@ $w_routes = array(
     ['GET|POST', '/article/ecrire/', 'Article#ecrire', 'article_ecrire'],
     ['GET|POST', '/article/niveau/', 'Article#niveau', 'article_niveau'],
     ['GET|POST', '/article/faq/', 'Faq#faqHome', 'article_faq'],
-    ['GET|POST', '/article/mentions/', 'Article#mentions', 'article_mentions'],
-    ['GET|POST', '/article/api/', 'Article#api', 'article_api'],
+    ['GET|POST', '/article/mentions/', 'Mentions#mentions', 'article_mentions'],
+    ['GET|POST', '/article/api/', 'Api#apiHome', 'article_api'],
+
+    /*********************************************************************
+     *                ROUTE CONTACT
+     *
+     ********************************************************************/
+    ['GET|POST', '/contact/', 'Contact#contactHome', 'contact_home'],
+
 
     // ROUTES LIQUIDES
     ['GET|POST', '/article/liquides/', 'Article#liquides', 'article_liquides'],

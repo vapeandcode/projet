@@ -167,10 +167,15 @@ h6 {
 /* FOOTER STYLE */
 
 footer {
+  
   padding-top: 10px;
+  bottom: 0;
+  right: 0;
+  left: 0;
   color: white;
   text-align: center;
   border-radius: 90px 90px 0 0;
+  margin: auto;
 }
 
 footer p {
@@ -220,7 +225,7 @@ footer>h2 {
 /* MISE EN PAGE DES TEXTES DE PRESENTATION */
 
 .center h2,
-p {
+p, .logform {
   text-align: center;
 }
 
@@ -326,8 +331,37 @@ p {
 	color:#fff;
 }
 
+/* STYLE API GOOGLE */
+.google {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+
 /* Query 1024 px */ 
 @media (min-width: 1280px) {
 
 }
 
+/* STYLE FORMULAIRE LOG */
+#containerLogin {
+    text-align: center;
+}
+
+.form-login {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+    margin-top: 20px;
+}
+
+.form-login h4 {
+    color: #337ab7;
+}
+  

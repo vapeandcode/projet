@@ -100,15 +100,15 @@
                             <a href="<?= $this->url("ecig_home"); ?>">Bien choisir votre matériel</a>
                         </li>
                         <li>
-                            <a href="#">Acheter votre matériel</a>
+                            <a href="<?= $this->url("article_api"); ?>">Acheter votre matériel</a>
                         </li>
                          <li>
-                            <a href="#">Mentions légales</a>
+                            <a href="<?= $this->url("article_mentions"); ?>">Mentions légales</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">Contactez nous &nbsp &nbsp &nbsp</a>
+                            <a href="<?= $this->url("contact_home"); ?>">Contactez nous &nbsp &nbsp &nbsp</a>
                         </li>
                     </ul>
                 </nav>
