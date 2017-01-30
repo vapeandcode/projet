@@ -303,6 +303,10 @@ p {
     border: 4px solid white;
 }
 
+.buttonAdminDiv {
+    float: right;
+}
+
 /*STYLE BOUTON SUBMIT COMMENTAIRES*/
 #buttontinymce {
   background-color: deepskyblue;

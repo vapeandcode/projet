@@ -67,10 +67,29 @@ $this->start('main_content');
     </p>
     </div>
 
-<!--BOUCLE POUR AFFICHER LES ELEMENTS ET LE BOUTON MODAL POUR LES COMMENTAIRES SUR CHAQUE ARTICLE-->
+<!-- BOUCLE POUR AFFICHER LES ELEMENTS ET LE BOUTON MODAL POUR LES COMMENTAIRES SUR CHAQUE ARTICLE -->
 <?php for ($i=0; $i<count($listeArticle); $i++) { ?>
     <div class="debutant article">
-        <p><h2><?php echo $listeArticle[$i]['title']?></h2></p>
+        <p>
+            <h2><?php echo $listeArticle[$i]['title']?></h2>
+            <?php
+            if (isset($_SESSION['user'])) {
+                if ($_SESSION['user']['role'] == 'admin') { ?>
+
+            <div class="buttonAdminDiv">
+                <form class="FormBtn" action="<?= $this->url('update_user_find') ?>" method="post">
+                <input type="hidden" name="userId" value="<?php echo $listeArticle[$i]['id'] ?>">
+                <button type="submit" name="userUpdate" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+                </form>
+                <form class="FormBtn" action="<?= $this->url('delete_user') ?>" method="post">
+                    <input type="hidden" name="userId" value="<?php echo $listeArticle[$i]['id'] ?>">
+                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>
+                </form>
+            </div>
+            <?php
+                }
+            } ?>
+        </p>
 
         <p>
             <img class="imgArticle" src="<?php echo $this->assetUrl('img/img_article/'); echo $listeArticle[$i]['picture']?>" alt="image eCig">
