@@ -80,7 +80,7 @@ $this->start('main_content');
                                     </div><!-- /panel panel-default -->
                                 </div><!-- /col-sm-5 -->
                             </div><!-- /row -->
-                        </div><!-- /container -->;
+                        </div><!-- /container -->
                     <?php echo "<br>"; }
                 }
             } ?>

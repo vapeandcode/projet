@@ -13,7 +13,7 @@
 </div>
 -->
 
-<div id="containerLogin" class="container">
+<div id="containerLog" class="container">
     <div class="row">
         <div class="col-md-offset-3 col-md-5">
             <form class="form-login" action="<?= $this->url('user_loginSubmit') ?>" method="post">
