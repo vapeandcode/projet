@@ -10,7 +10,7 @@ $this->start('main_content');
     </div>
             <div class="grid">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <figure class="effect-honey">
                             <figcaption>
                                 <h2>Menthols</h2>
@@ -19,7 +19,7 @@ $this->start('main_content');
                         </figure>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <figure class="effect-honey">
                             <figcaption>
                                 <h2>Tabacs</h2>
@@ -28,10 +28,8 @@ $this->start('main_content');
                             </figcaption>
                         </figure>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <figure class="effect-honey">
                             <figcaption>
                             <h2>Gourmands</h2>
@@ -40,7 +38,7 @@ $this->start('main_content');
                         </figure>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <figure class="effect-honey">
                             <figcaption>
                             <h2>Fruités</h2>
