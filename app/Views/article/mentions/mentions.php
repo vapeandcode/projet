@@ -3,26 +3,15 @@
 <?php $this->start('main_content') ?>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
- <script>
-  $( function() { 
-    var icons = {
-      header: "ui-icon-circle-arrow-e",
-      activeHeader: "ui-icon-circle-arrow-s"
-    };
+  <script>
+  $( function() {
     $( "#accordion" ).accordion({
-      icons: icons
-    });
-    $( "#toggle" ).button().on( "click", function() {
-      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
-        $( "#accordion" ).accordion( "option", "icons", null );
-      } else {
-        $( "#accordion" ).accordion( "option", "icons", icons );
-      }
+      heightStyle: "content"
     });
   } );
   </script>
 
-Vos mentions légales :
+
 <h2>Informations légales</h2>
 <div id="accordion">
 <h3>1. Présentation du site.</h3>

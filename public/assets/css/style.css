@@ -326,6 +326,13 @@ p {
 	color:#fff;
 }
 
+/* STYLE API GOOGLE */
+.google {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+
 /* Query 1024 px */ 
 @media (min-width: 1280px) {
 
