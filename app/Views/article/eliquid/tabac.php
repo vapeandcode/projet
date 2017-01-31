@@ -77,6 +77,13 @@ $this->start('main_content');
                                         </div>
                                         <div class="panel-body">
                                             <span id="blacktext"><?= $listeComment[$q]['content'] ?></span>
+                                            <?php if (isset($_SESSION['user']))
+                                            {
+                                                if ($_SESSION['user']['id'] == $listeComment[$q]['users_id'])
+                                                {
+                                                    ?><button type="submit" form="updateUser" name="myUserUpdate" class="btn btn-warning rightComment"><i class="fa fa-edit"></i></button><?php
+                                                }
+                                            }?>
                                         </div><!-- /panel-body -->
                                     </div><!-- /panel panel-default -->
                                 </div><!-- /col-sm-5 -->
