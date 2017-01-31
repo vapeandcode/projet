@@ -264,10 +264,18 @@ p, .logform {
     border-radius: 1%;
     box-shadow: 0px 0px 10px 3px rgba(31, 30, 30, 0.75);
 }
+
+@media (max-width: 600px) {
+    .article {
+        width: 100%;
+    }
+}
+
 .article img {
     height: 12em;
     max-width: 100%;
 }
+
 @media (max-width: 768px)  {
     .smalltext {
         font-size: 0.8em;
