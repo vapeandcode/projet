@@ -6,14 +6,18 @@ use \W\Controller\Controller;
 use Model\LoginModel;
 use Model\SignupModel;
 use \W\Model\UsersModel;
+use Model\AdminModel;
+use Controller\AdminController;
 
 
 
 class UserController extends Controller
 {
-    public function home()
+    public function myHome()
     {
-        $this->show('user/home');
+        $query = new AdminModel();
+        $result = $query -> adminFindUpdate($_SESSION['user']['id']);
+        $this->show('user/home', ['listeUser' => $result]);
     }
 
     public function loginFrom()
@@ -29,11 +33,13 @@ class UserController extends Controller
         // SI L'UTILISATEUR EST CONNECTE IL EST ENVOYE VERS LA PAGE SUCCES
         if ($result)
         {
-            $this->show('user/loginSuccess');
+            $msg = $_SESSION['user']['username'];
+            $this->show('default/home', ['msg' => $msg]);
         }
         else
         {
-            $this->show('user/loginFail');
+            $msg = "Erreur dans les identifiants, Veuillez re-essayer.";
+            $this->show('user/login', ['msg' => $msg]);
         }
     }
 

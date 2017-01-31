@@ -322,6 +322,10 @@ p, .logform {
     float: right;
 }
 
+.rightComment {
+    float: right;
+}
+
 /*STYLE BOUTON SUBMIT COMMENTAIRES*/
 #buttontinymce {
     color: #fff;

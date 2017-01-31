@@ -10,6 +10,9 @@ namespace Controller;
 
 use \W\Controller\Controller;
 use \Model\AdminModel;
+use \W\Security\AuthentificationModel;
+use Controller\UserController;
+
 
 class AdminController extends Controller
 {
@@ -56,20 +59,49 @@ class AdminController extends Controller
 
     public function updateUser()
     {
-        $data = array(
-            'username' => $_POST['username'],
-            'role' => $_POST['role'],
-            'email' => $_POST['email']
-        );
+        // SI LA METHOD EST LANCE DEPUIS UN USER
+        if (isset($_POST['myUserUpdate']))//nom du boutton submit coter user.
+        {
+            if ($_POST['password'] == '' ) // Si le user ne change pas sont password.
+            {
+                $data = array( // On ne recup que l'email.
+                    'email' => $_POST['email']
+                );
+            } else {
+                // ON HASH LE PASSWORD
+                $hash = new AuthentificationModel();
+                $pwdHash = $hash->hashPassword($_POST['password']);
+
+                $data = array( // Sinon les deux.
+                    'password' => $pwdHash,
+                    'email' => $_POST['email']
+                );
+            }
+        } else {
+            // SI C EST LANCE DEPUIS ADMIN
+            $data = array(
+                'username' => $_POST['username'],
+                'role' => $_POST['role'],
+                'email' => $_POST['email']
+            );
+        }
         $query = new AdminModel();
         $result = $query -> adminUpdate($data, $_POST['userId']);
-        if ($result)
+        if (isset($_POST['myUserUpdate']))
         {
-            $this ->admin();
-        } else
-            {
+            if ($result) {
+                $homeUser = new UserController();
+                $homeUser->myHome();
+            } else {
                 $this->show('w_errors/404');
             }
+        } else {
+            if ($result) {
+                $this->admin();
+            } else {
+                $this->show('w_errors/404');
+            }
+        }
     }
 
     /*********************************************************************

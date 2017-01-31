@@ -35,4 +35,5 @@ class ArticleModel extends Model
 
         return $sth->fetchAll();
     }
+
 }

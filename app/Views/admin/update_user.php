@@ -5,7 +5,6 @@ $this->start('main_content');
  * Created by PhpStorm.
  * User: PEP
  */
-var_dump($listeUser);
 ?>
 <h2>Gestion de mises a jour de <?php echo  $listeUser['username'] ?></h2>
 

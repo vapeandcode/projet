@@ -1,8 +1,19 @@
 <?php $this->layout('layout', ['title' => 'Accueil']) ?>
 
 <?php $this->start('main_content') ?>
-
+        <?php
+    if (isset($msg))
+    {
+//        MESSAGE QUAND LE USER CE CONNECTE
+        ?>
+        <div id="success-alert alert" class="alert alert-success">
+            <strong>Success!</strong> Bonjour, <?php echo $msg ?>.
+        </div>
+        <?php
+    }
+    ?>
 	<h4>Qui sommes nous ?</h4>
+
       <p>
         Code N Vape est un projet destiné a vous accompagner dans le monde merveilleux de la vape.
         Nous sommes parti du constat que ce domaine pour un néophyte peut paraitre inaccesible avec ces termes barbares et la multitude de produits face a des sites reservés aux experts.

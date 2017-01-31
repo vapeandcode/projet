@@ -34,6 +34,7 @@ class AdminModel extends Model
         }
     }
 
+
     /*********************************************************************
      *                METHOD POUR DELETE LES UTILISATEURS
      *

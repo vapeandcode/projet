@@ -1,17 +1,17 @@
 <?php $this->layout('layout', ['title' => 'Utilisateur']) ?>
 
-<?php $this->start('main_content') ?>
-<!--<div class="centerBoxLog">
-    <div class="formLog center">
-        <h2>Login</h2>
-        <form class="logform" action="<?/*= $this->url('user_loginSubmit') */?>" method="post">
-            <input id="blacktext" type="text" name="username" placeholder="Pseudo"></br>
-            <input id="blacktext" type="password" name="password" placeholder="Mot de passe"></br>
-            <input id="blacktext" type="submit" class="AddButton" name="subLogin" value="Connection">
-        </form>
+<?php $this->start('main_content');
+if (isset($msg))
+{
+//        MESSAGE ALERT USER ERREUR CONNECTION
+    ?>
+    <div class="alert alert-danger">
+        <strong>Erreur !</strong> <?php echo $msg ?>.
     </div>
-</div>
--->
+    <?php
+}
+?>
+
 
 <div id="containerLog" class="container">
     <div class="row">

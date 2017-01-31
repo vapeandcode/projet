@@ -41,7 +41,7 @@ $w_routes = array(
      *                ROUTES UTILISATEURS
      *
      ********************************************************************/
-    ['GET|POST', '/user/', 'User#home', 'user_home'],
+    ['GET|POST', '/user/', 'User#myHome', 'user_home'],
     ['GET|POST', '/user/login/', 'User#loginFrom', 'user_loginForm'],
     ['GET|POST', '/user/loginUser/', 'User#loginSubmit', 'user_loginSubmit'],
     ['GET|POST', '/user/logout/', 'User#logout', 'user_logout'],
@@ -56,7 +56,7 @@ $w_routes = array(
     ['GET|POST', '/admin/', 'Admin#admin', 'admin_users'],
     ['GET|POST', '/admin/delete_user/', 'Admin#deleteUser', 'delete_user'],
     ['GET|POST', '/admin/update_user/', 'Admin#updateFindUser', 'update_user_find'],
-    ['GET|POST', '/admin/updateUser/', 'Admin#updateUser', 'update_user'],
+    ['GET|POST', '/updateUser/', 'Admin#updateUser', 'update_user'],
     ['GET|POST', '/admin/add_article/', 'Admin#addArticle', 'add_article'],
     ['GET|POST', '/admin/update_article/', 'Admin#updateFindArticle', 'update_article_find'],
     ['GET|POST', '/admin/updateArticle/', 'Admin#updateArticle', 'update_article'],

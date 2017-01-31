@@ -139,7 +139,8 @@ $this->start('main_content');
         <p><?php
             for ($q=0; $q<count($listeComment); $q++) {
                 if (isset($listeComment[$q]['article_id'])) {
-                    if ($listeArticle[$i]['id'] == $listeComment[$q]['article_id']) { ?>
+                    if ($listeArticle[$i]['id'] == $listeComment[$q]['article_id']) {
+                        ?>
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-5">
@@ -149,6 +150,13 @@ $this->start('main_content');
                                         </div>
                                         <div class="panel-body">
                                             <span id="blacktext"><?= $listeComment[$q]['content'] ?></span>
+                                            <?php if (isset($_SESSION['user']))
+                                                {
+                                                    if ($_SESSION['user']['id'] == $listeComment[$q]['users_id'])
+                                                    {
+                                                        ?><button type="submit" form="updateUser" name="myUserUpdate" class="btn btn-warning rightComment"><i class="fa fa-edit"></i></button><?php
+                                                    }
+                                                }?>
                                         </div><!-- /panel-body -->
                                     </div><!-- /panel panel-default -->
                                 </div><!-- /col-sm-5 -->

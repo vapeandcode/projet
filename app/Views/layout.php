@@ -31,6 +31,18 @@
             toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
             content_css: '//www.tinymce.com/css/codepen.min.css'
         });
+
+
+        $(document).ready(function () {
+
+            window.setTimeout(function() {
+                $(".alert").fadeTo(1500, 0).slideUp(500, function(){
+                    $(this).remove();
+                });
+            }, 2000);
+
+        });
+
     </script>
 
 
@@ -50,7 +62,7 @@
 
                         <!--  SI ON A UNE SESSION D OUVERTE, ON AFFICHE -->
                     <?php } elseif (isset($_SESSION['user']['username'])) { ?>
-                        <li><span class="glyphicon"><?php echo $_SESSION['user']['username'] ?></span></li>
+                        <li><a href="<?= $this->url("user_home"); ?>"><span class="glyphicon">Mon compte</span></a></li>
                         <li><a href="<?= $this->url("user_logout"); ?>"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     <?php }
                         if (isset($_SESSION['user']['role'])) {
