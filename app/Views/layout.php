@@ -85,7 +85,7 @@
                 <span>Reviews</span>
                 <span>Conseils</span>
             </div>
-            <img src="<?= $this->assetUrl('img/logo.png') ?>" alt="image Logo Vap n Code">
+            <a href="<?= $this->url("default_home"); ?>"><img src="<?= $this->assetUrl('img/logo.png') ?>" alt="image Logo Vap n Code"></a>
             <div class="headerKeyRight">
                 <span>Infos</span>
                 <span>Produits</span>
