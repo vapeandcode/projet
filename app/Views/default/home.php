@@ -41,19 +41,19 @@
   <!-- Wrapper des slides du carousel -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="https://resize.over-blog.com/400x400-ct.jpg?http://img.over-blog-kiwi.com/0/91/03/66/20160808/ob_b1213d_idees-recues.jpg" alt="image carousel stop aux idées reçues">
+      <img src="http://www.shishavibe.com/wp-content/uploads/2016/10/innokin-smartbox-vape-kit-600x600.jpg" alt="image carousel ecig 1">
     </div>
 
     <div class="item">
-      <img src="https://lh3.googleusercontent.com/proxy/K4LWoH8Zquu3uu-V9AmKa8HdDRJrpvbt0rZBZvpVg6ygSCSWtePSuC65vnhGv5zERG7wg7CF82p875CjMGKLe1pqEshFrjnXp_UIsst9AiSZPKjmwQvvqHlAvf4=s426" alt="image carousel arretez de fumer">
+      <img src="http://www.churnmag.com/wp-content/uploads/2016/12/Smok-Alien-220watt-Vape-Kit-600x600.jpg" alt="image carousel ecig 2">
     </div>
 
     <div class="item">
-      <img src="https://s-media-cache-ak0.pinimg.com/736x/fb/c6/fc/fbc6fc8a333fe36b9dbaf18e049e086d.jpg" alt="image carousel santé Vape">
+      <img src="https://www.johnnystobacconist.co.uk/wp-content/uploads/2016/04/Home-run-high-VG-e-liquid-by-Vampire-Vape-600x600.jpg" alt="image eliquide">
     </div>
 
     <div class="item">
-      <img src="https://pbs.twimg.com/profile_images/527430043178655744/1TBAzFxB.jpeg" alt="image carousel stop fumer , commencez a vaper">
+      <img src="http://makemyvape.co.uk/image/cache/blog/2016/07/summer-vape-600x600.jpg" alt="image carousel d'un homme qui vape'">
     </div>
   </div>
 
