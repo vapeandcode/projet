@@ -46,7 +46,7 @@ $this->start('main_content');
         } ?>
         <p><img src="<?= $this->assetUrl('img/img_article/' . $listeArticle[$i]['picture'] . '') ?>" alt="img liquide"/></p><?php /*echo $listeArticle[$i]['picture']*/?>
         <hr>
-        <p class="smalltext" <?php echo $listeArticle[$i]['description']?></p>
+        <p class="smalltext"><?php echo $listeArticle[$i]['description']?></p>
 
         <!--SI L'UTILISATEUR EST BIEN CONNECTE AFFICHAGE DU BOUTON MODAL POUR LES COMMENTAIRES-->
         <?php if (isset($_SESSION['user']['username'])) { ?>
