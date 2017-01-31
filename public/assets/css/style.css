@@ -90,7 +90,7 @@ h6 {
   height: 140px;
 }
 
-.headPage>img:hover {
+.headPage>a>img:hover {
   transform: scale(1.2);
 }
 
