@@ -241,16 +241,6 @@ p, .logform {
  }
 
 
-/* MISE EN PAGE ET EFFET HOVER SUR IMAGES DE PRESENTATION */
-/* .menthol img,
- .tabac img,
- .gourmand img,
- .fruite img
-  {
-   max-width: 100%;
-   height: auto;
- }*/
-
  .effect-honey {
      background-color: rgba(208, 219, 217, 0.34);
      padding: 20px;
@@ -274,8 +264,10 @@ p, .logform {
     border-radius: 1%;
     box-shadow: 0px 0px 10px 3px rgba(31, 30, 30, 0.75);
 }
-
-
+.article img {
+    height: 12em;
+    max-width: 100%;
+}
 
 .article > h2 {
   text-align: center;
