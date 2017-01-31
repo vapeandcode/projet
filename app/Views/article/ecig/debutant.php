@@ -90,7 +90,7 @@ $this->start('main_content');
                 }
             } ?>
         </p>
-
+        <div class="align">
         <p>
             <img class="imgArticle" src="<?php echo $this->assetUrl('img/img_article/'); echo $listeArticle[$i]['picture']?>" alt="image eCig">
             <!--SI ON A UNE IMAGE SCHEMA ON L AFFICHE-->
@@ -99,6 +99,7 @@ $this->start('main_content');
             <?php } ?>
             <hr>
         </p>
+        </div>
 
         <p><?php echo $listeArticle[$i]['description']?></p>
         <p><a href="<?php echo $listeArticle[$i]['link']?>">Lien youtube</a></p>
