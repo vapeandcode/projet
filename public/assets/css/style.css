@@ -346,6 +346,11 @@ p, .logform {
 	color:#fff;
 }
 
+/* STYLE BOUTONS RESPONSIVE BOOTSTRAP */
+@media (max-width: 992px) {
+.btn {font-size: 3vw;}
+}
+
 /* STYLE API GOOGLE */
 .google {
   display: block;
