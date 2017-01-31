@@ -66,29 +66,6 @@ if (isset($_SESSION['user'])) {
         <hr>
         <h2>Gestions articles</h2>
         <h2>Ajouter un article</h2>
-        <!-- FORMULAIRE QUI RENVOIE VERS LA PAGE ADDARTICLE -->
-        <!--<form id="addArticle" action="<?/*= $this->url('add_article') */?>" method="post">
-            <p>Titre de l'article : <input id="blacktext" type="text" name="title" value=""></p>
-            <p>Description : <input id="blacktext" type="text" name="description" value=""></p>
-            <p>Image schema (nom.extension)(eCiq seulement) de l'article : <input type="file" name="picture" value="">
-            </p>
-            <p>Image schema (nom.extension)(eCiq seulement) de l'article : <input type="file" name="schema" value="">
-            </p>
-            <p>Lien source/video/... : <input id="blacktext" type="text" name="link" value=""></p>
-            <p>
-                Categorie de l'article :
-                <select name="type_id" form="addArticle">
-                    <option value="1">eCig - Debutant</option>
-                    <option value="2">eCig - Intermediaire</option>
-                    <option value="3">eCig - Expert</option>
-                    <option value="4">eLiquid - Menthol</option>
-                    <option value="5">eLiquid - Tabac</option>
-                    <option value="6">eLiquid - Gourmand</option>
-                    <option value="7">eLiquid - Fruit</option>
-                </select>
-            </p>
-            <p><input type="submit" name="submit" value="Envoyer"></p>
-        </form>-->
 
         <div class="container addarticleadmin">
             <div class="row">
@@ -101,13 +78,13 @@ if (isset($_SESSION['user'])) {
                         </br>
                         <p>Image de l'article (depuis dossier img_article du site) : <input type="file" name="picture" value=""></p>
                         </br>
-                        <p>Image schema (eCig seulement) de l'article (depuis dossier img_article du site) : <input type="file" name="picture" value=""></p>
+                        <p>Image schema (eCig seulement) de l'article (depuis dossier img_article du site) : <input type="file" name="schema" value=""></p>
                         </br>
                         <p>Lien source/video/... : <input id="blacktext" type="text" name="link" value=""></p>
                         </br>
                         <p>
                             Categorie de l'article :
-                            <select name="type_id" form="addArticle">
+                            <select name="type_id" form="addarticleadmin">
                                 <option value="1">eCig - Debutant</option>
                                 <option value="2">eCig - Intermediaire</option>
                                 <option value="3">eCig - Expert</option>
