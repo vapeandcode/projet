@@ -84,7 +84,7 @@ h6 {
     background-color: rgba(237, 235, 205, 0.13);
 }
 
-.headPage>img {
+.headPage>a>img {
   padding: 0 10px;
   display: block;
   height: 140px;

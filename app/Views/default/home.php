@@ -11,6 +11,15 @@
         </div>
         <?php
     }
+    if (isset($success))
+    {
+//        MESSAGE ALERT USER ERREUR CONNECTION
+        ?>
+        <div class="alert alert-success">
+            <strong>Success !</strong> <?php echo $success ?>.
+        </div>
+        <?php
+        }
     ?>
 	<h4>Qui sommes nous ?</h4>
 

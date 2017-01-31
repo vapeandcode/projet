@@ -95,7 +95,7 @@ class UserController extends Controller
             if ($result)
             {
                 $msg = "Votre compte a bien été crée, veuillez vous connecter !";
-                $this->show('user/inscription', ['msg' => $msg]);
+                $this->show('user/inscription', ['success' => $msg]);
             }
         }
 

@@ -32,7 +32,8 @@ class CommentController extends Controller
         $result = $query -> addComment($data);
         if ($result)
         {
-            echo "Commentaire ajouté !";
+            $msg = "Commentaire ajouté.";
+            $this->show('default/home', ['success' => $msg]);
         }
     }
 }
