@@ -4,7 +4,12 @@
 <?php
     if (isset($msg))
     {
-        echo "<p>" . $msg ."</p>";
+//        MESSAGE ALERT USER ERREUR CONNECTION
+    ?>
+        <div class="alert alert-danger">
+            <strong>Erreur !</strong> <?php echo $msg ?>.
+        </div>
+    <?php
     }
 ?>
 <!--<form id="updateUser" action="<?/*= $this->url('user_create_user') */?>" method="post">

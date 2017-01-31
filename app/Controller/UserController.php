@@ -65,11 +65,17 @@ class UserController extends Controller
         $ifExist = new UsersModel();
         $mailExist = $ifExist->emailExists($_POST['email']);
         $userExist = $ifExist->usernameExists($_POST['username']);
-
+//        SI PASSWORD MOINS DE 6 CARACT
+        if (strlen($_POST['password']) < 6) {
+            $msg = "Mot de passe de 6 caractères minimum";
+            $this->show('user/inscription', ['msg' => $msg]);
+        }
+//        SI USERNAME EXISTE DEJA
         if ($userExist == true)
         {
             $msg = "Pseudo déjà utilisé";
             $this->show('user/inscription', ['msg' => $msg]);
+//        SI EMAIL EXISTE DEJA
         } elseif ($mailExist == true)
         {
             $msg = "Adresse email déjà existante";
