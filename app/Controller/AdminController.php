@@ -97,7 +97,8 @@ class AdminController extends Controller
             }
         } else {
             if ($result) {
-                $this->admin();
+                $msg = "Utilisateur mis a jours";
+                $this->show('default/home', ['success' => $msg]);
             } else {
                 $this->show('w_errors/404');
             }
@@ -132,8 +133,8 @@ class AdminController extends Controller
         $result = $query -> adminAddArticle($data);
         if ($result)
         {
-            echo "Article ajouté !";
-            $this ->admin();
+            $msg = "Article ajouté";
+            $this->show('default/home', ['success' => $msg]);
         }
     }
 
@@ -192,12 +193,12 @@ class AdminController extends Controller
                 'type_id' => $_POST['type_id']
             );
         }
-        var_dump($data);
         $query = new AdminModel();
         $result = $query -> adminUpdateArticle($data, $_POST['articleId']);
         if ($result)
         {
-            echo "GG garcon tu nest plus ligne 95 !";
+            $msg = "Article modifier";
+            $this->show('default/home', ['success' => $msg]);
         } else
         {
             $this->show('w_errors/404');
@@ -210,9 +211,8 @@ class AdminController extends Controller
         $result = $query ->articleDelete($_POST['articleId']);
         if ($result == true)
         {
-            // On renvoi le METHOD admin() pour re-afficher la page avec la liste des utilisateur
-//            $this->admin();
-            echo "gg cest suppr";
+            $msg = "Article supprimé";
+            $this->show('default/home', ['success' => $msg]);
         }
     }
 }

@@ -7,6 +7,24 @@ $this->start('main_content');
  */
 if (isset($_SESSION['user'])) {
     if ($_SESSION['user']['role'] == 'admin') {
+        if (isset($msg))
+        {
+//        MESSAGE ALERT USER ERREUR CONNECTION
+            ?>
+            <div class="alert alert-danger">
+                <strong>Erreur !</strong> <?php echo $msg ?>.
+            </div>
+            <?php
+        }
+        if (isset($success))
+        {
+//        MESSAGE ALERT USER ERREUR CONNECTION
+            ?>
+            <div class="alert alert-success">
+                <strong>Success !</strong> <?php echo $success ?>.
+            </div>
+            <?php
+        }
         ?>
         <h2>Administration</h2>
         <p>
@@ -20,7 +38,6 @@ if (isset($_SESSION['user'])) {
             <tr>
                 <th>Id</th>
                 <th>Pseudo</th>
-                <th>Email</th>
                 <th>Role</th>
                 <th>Actions</th>
             </tr>
@@ -30,7 +47,6 @@ if (isset($_SESSION['user'])) {
                 <tr>
                     <td><?php echo $listeUser[$i]['id'] ?></td>
                     <td><?php echo $listeUser[$i]['username'] ?></td>
-                    <td><?php echo $listeUser[$i]['email'] ?></td>
                     <td><?php echo $listeUser[$i]['role'] ?></td>
                     <td>
                         <form class="FormBtn" action="<?= $this->url('update_user_find') ?>" method="post">
