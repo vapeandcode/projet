@@ -101,7 +101,7 @@ $this->start('main_content');
         </p>
         </div>
 
-        <p><?php echo $listeArticle[$i]['description']?></p>
+        <p class="smalltext"><?php echo $listeArticle[$i]['description']?></p>
         <p><a href="<?php echo $listeArticle[$i]['link']?>">Lien youtube</a></p>
 
         <!--SI L'UTILISATEUR EST BIEN CONNECTE AFFICHAGE DU BOUTON MODAL POUR LES COMMENTAIRES-->
