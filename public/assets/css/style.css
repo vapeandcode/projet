@@ -282,7 +282,7 @@ p, .logform {
 }
 
 .imgArticle {
-    height: 200px;
+    height: 12em;
     max-width: 100%;
 }
 
@@ -428,5 +428,7 @@ input::-webkit-input-placeholder {
     font-size: 11px;
     text-align: center;
 }
+
+
 
   
