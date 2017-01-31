@@ -57,13 +57,13 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!--  SI ON A PAS DE SESSION D OUVERTE, ON AFFICHE -->
                     <?php if (!isset($_SESSION['user']['username'])) { ?>
-                        <li><a href="<?= $this->url("user_inscription"); ?>"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="<?= $this->url("user_inscription"); ?>"><span class="glyphicon glyphicon-user"></span> S'inscrire</a></li>
+                        <li><a href="<?= $this->url("user_loginForm"); ?>"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
 
                         <!--  SI ON A UNE SESSION D OUVERTE, ON AFFICHE -->
                     <?php } elseif (isset($_SESSION['user']['username'])) { ?>
                         <li><a href="<?= $this->url("user_home"); ?>"><span class="glyphicon">Mon compte</span></a></li>
-                        <li><a href="<?= $this->url("user_logout"); ?>"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                        <li><a href="<?= $this->url("user_logout"); ?>"><span class="glyphicon glyphicon-log-out"></span> Déconnexion</a></li>
                     <?php }
                         if (isset($_SESSION['user']['role'])) {
                         if ($_SESSION['user']['role'] == "admin") { ?>
