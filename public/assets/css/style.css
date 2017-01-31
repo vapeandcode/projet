@@ -459,6 +459,10 @@ input::-webkit-input-placeholder {
     color: black;
 }
 
+#accordion > h3 {
+    color: lightgoldenrodyellow;
+}
+
 @media (max-width: 600px) {
     .addarticleadmin {
         width: 100%;
