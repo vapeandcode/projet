@@ -453,6 +453,12 @@ input::-webkit-input-placeholder {
     text-align: center;
 }
 
+/* STYLE FORMULAIRE CREATION ARTICLE PAR ADMIN */
+
+#addarticleadmin p {
+    color: black;
+}
+
 
 
   

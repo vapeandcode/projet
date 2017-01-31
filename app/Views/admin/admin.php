@@ -51,7 +51,7 @@ if (isset($_SESSION['user'])) {
         <h2>Gestions articles</h2>
         <h2>Ajouter un article</h2>
         <!-- FORMULAIRE QUI RENVOIE VERS LA PAGE ADDARTICLE -->
-        <form id="addArticle" action="<?= $this->url('add_article') ?>" method="post">
+        <!--<form id="addArticle" action="<?/*= $this->url('add_article') */?>" method="post">
             <p>Titre de l'article : <input id="blacktext" type="text" name="title" value=""></p>
             <p>Description : <input id="blacktext" type="text" name="description" value=""></p>
             <p>Image schema (nom.extension)(eCiq seulement) de l'article : <input type="file" name="picture" value="">
@@ -72,7 +72,46 @@ if (isset($_SESSION['user'])) {
                 </select>
             </p>
             <p><input type="submit" name="submit" value="Envoyer"></p>
-        </form>
+        </form>-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-5">
+                    <form id="addarticleadmin" class="form-login" action="<?= $this->url('add_article') ?>" method="post">
+                        <h4>Ajouter un article</h4>
+                        <p>Titre de l'article : <input id="blacktext" type="text" name="title" value=""></p>
+                        </br>
+                        <p>Description : <input id="blacktext" type="text" name="description" value=""></p>
+                        </br>
+                        <p>Image de l'article (depuis dossier img_article du site) : <input type="file" name="picture" value=""></p>
+                        </br>
+                        <p>Image schema (eCig seulement) de l'article (depuis dossier img_article du site) : <input type="file" name="picture" value=""></p>
+                        </br>
+                        <p>Lien source/video/... : <input id="blacktext" type="text" name="link" value=""></p>
+                        </br>
+                        <p>
+                            Categorie de l'article :
+                            <select name="type_id" form="addArticle">
+                                <option value="1">eCig - Debutant</option>
+                                <option value="2">eCig - Intermediaire</option>
+                                <option value="3">eCig - Expert</option>
+                                <option value="4">eLiquid - Menthol</option>
+                                <option value="5">eLiquid - Tabac</option>
+                                <option value="6">eLiquid - Gourmand</option>
+                                <option value="7">eLiquid - Fruit</option>
+                            </select>
+                        </p>
+                        <div class="wrapper">
+                    <span class="group-btn">
+                        <button class="btn btn-primary btn-md" type="submit" name="subLogin">Modifier</button>
+                        <!--<a href="<?/*= $this->url('user_loginSubmit') */?>" name="subLogin" class="btn btn-primary btn-md">Valider<i class="fa fa-sign-in"></i></a>-->
+                    </span>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
         <?php $this->stop('main_content') ?>
 
         <?php $this->start('js') ?>
