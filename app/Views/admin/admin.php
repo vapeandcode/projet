@@ -74,7 +74,7 @@ if (isset($_SESSION['user'])) {
             <p><input type="submit" name="submit" value="Envoyer"></p>
         </form>-->
 
-        <div class="container">
+        <div class="container addarticleadmin">
             <div class="row">
                 <div class="col-md-offset-3 col-md-5">
                     <form id="addarticleadmin" class="form-login" action="<?= $this->url('add_article') ?>" method="post">
@@ -103,7 +103,7 @@ if (isset($_SESSION['user'])) {
                         </p>
                         <div class="wrapper">
                     <span class="group-btn">
-                        <button class="btn btn-primary btn-md" type="submit" name="subLogin">Modifier</button>
+                        <button class="btn btn-primary btn-md" type="submit" name="subLogin">Ajouter</button>
                         <!--<a href="<?/*= $this->url('user_loginSubmit') */?>" name="subLogin" class="btn btn-primary btn-md">Valider<i class="fa fa-sign-in"></i></a>-->
                     </span>
                         </div>
