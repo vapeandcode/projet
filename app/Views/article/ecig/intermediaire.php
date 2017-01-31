@@ -71,6 +71,23 @@ $this->start('main_content');
 <?php for ($i=0; $i<count($listeArticle); $i++) { ?>
     <div class="intermediaire article">
         <p><h2><?php echo $listeArticle[$i]['title']?></h2></p>
+        <?php
+        if (isset($_SESSION['user'])) {
+            if ($_SESSION['user']['role'] == 'admin') { ?>
+
+                <div class="buttonAdminDiv">
+                    <form class="FormBtn" action="<?= $this->url('update_article_find') ?>" method="post">
+                        <input type="hidden" name="articleId" value="<?php echo $listeArticle[$i]['id'] ?>">
+                        <button type="submit" name="userUpdate" class="btn btn-warning"><i class="fa fa-edit"></i></button>
+                    </form>
+                    <form class="FormBtn" action="<?= $this->url('delete_article') ?>" method="post">
+                        <input type="hidden" name="articleId" value="<?php echo $listeArticle[$i]['id'] ?>">
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>
+                    </form>
+                </div>
+                <?php
+            }
+        } ?>
 
         <p>
             <img class="imgArticle" src="<?php echo $this->assetUrl('img/img_article/'); echo $listeArticle[$i]['picture']?>" alt="image eCig">
@@ -130,6 +147,13 @@ $this->start('main_content');
                                         </div>
                                         <div class="panel-body">
                                             <span id="blacktext"><?= $listeComment[$q]['content'] ?></span>
+                                            <?php if (isset($_SESSION['user']))
+                                            {
+                                                if ($_SESSION['user']['id'] == $listeComment[$q]['users_id'])
+                                                {
+                                                    ?><button type="submit" form="updateUser" name="myUserUpdate" class="btn btn-warning rightComment"><i class="fa fa-edit"></i></button><?php
+                                                }
+                                            }?>
                                         </div><!-- /panel-body -->
                                     </div><!-- /panel panel-default -->
                                 </div><!-- /col-sm-5 -->
