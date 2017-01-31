@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Mar 31 Janvier 2017 à 10:32
+-- Généré le :  Mar 31 Janvier 2017 à 11:40
 -- Version du serveur :  5.7.14
 -- Version de PHP :  7.0.10
 
@@ -45,7 +45,7 @@ INSERT INTO `article` (`id`, `title`, `description`, `picture`, `schema`, `link`
 (56, 'Box Ego AIO', 'Le modèle Ego Aio Box est une cigarette électronique simple, pratique, idéale pour une personne qui souhaite débuter la vape.Garantie sans fuite, avec une excellente résistance BF SS316 et une batterie intégrée de 2100 mah qui vous donnerons les sensations de vape que vous attendez d\'une cigarette électronique, la box Ego Aio Box c\'est l\'assurance d\'une vape sans prise de tête.', 'boxegoaio.jpg', 'boxegoaio_shema.jpg', 'https://youtu.be/S_mwaSJiH7I', 1, 1),
 (57, 'Ego AIO', 'Le kit eGo AIO est un nouveau concept adapté aux fumeurs qui souhaitent vaper avec une e-cigarette d\'une grande simplicité d\'usage et utilisable en toute occasion.L\'eGo AIO est une cigarette électronique "TOUT EN UN" qui comprend une batterie de 1500 mAh et un clearomizer, d\'une contenance de 2ml, munie d\'une protection anti-fuites pour le fond comme pour le CUBIS. Vous découvrirez donc un équipement innovant, puissant et très pratique. La partie clearomizer, indissociable de la batterie, est unique, dispose d\'une protection enfant comme les flacons d-e-liquide. Pour l\'ouvrir il suffit d\'exercer une pression sur son sommet et de dévisser la partie supérieure. Le réservoir possède une contenance de ml et son drip-tip a été pensé pour éviter les reflux de condensation grâce a une hélice placée a l\'intérieur.', 'egoaio.jpg', 'egoaio_shema.jpg', 'https://youtu.be/Gibcv2dh5XM', 1, 1),
 (58, 'iStick Basic', 'Le kit iStick Basic de Eleaf est composé d\'un atomiseur GS Air 2 et d\'une batterie iStick d\'une capacité de 2300 mAh.  L\'iStick Basic est un modèle de vaporisateur électronique format box idéal pour les débutants qui désirent débuter avec du matériel performant et simple d\'utilisation. Son design aux formes arrondis offre une prise en main très agréable.  La batterie iStick a une capacité de 2300 mAh et est équipée d\'un tout système de connectique magnétique. Il n\'est plus nécessaire de visser votre atomiseur sur la batterie, il faut simplement le faire glisser dans le socle de l\'iStick.  Concernant son fonctionnement, rien de plus simple : le bouton principal sert a allumer la batterie, vapoter, et l\'eteindre. Aucun réglage n\'est a effectuer,plus la batterie sera chargée, plus elle délivrera une puissance importante. Elle se recharge grâce au câble micro-USB fourni.  L\'atomiseur GS Air 2 qui compose ce coffret a une contenance de 2ml et un diamètre de 14mm. Il dispose également d\'un système airflow pour un tirage serré ou bien un tirage plus aérien pour une vapeur plus dense.  Le GS Air 2 est livré avec des résistances 0.75 Ohm mais il est également possible d\'utiliser les résistances GS Air Pure Cotton 1.2 ohm. Il est également livré un adaptateur 510 et eGo pour pouvoir le visser sur n\'importe quelle batterie équipée de ce type de pas de vis.', 'istickbasic.jpg', 'istickbasic_shema.jpg', 'https://youtu.be/GVMQE9vJ8-I', 1, 1),
-(59, 'Kit Target Mini updated', 'Découvrez le tout nouveau kit box électronique de Vaporesso, le Target Mini.  Composé d\'une petite box électronique Target Mini de 40W et d\'un clearomiseur Guardian de 2ml avec protection anti fuites et remplissage par le haut, il ravira aussi bien les vapoteurs débutants qu\'expérimentés.  Ce petit kit ultra simple mais puissant vous etonnera par ses capacités et sa qualité de vape. Un indispensable !', 'kittargetmini.jpg', 'kittargetmini_shema.jpg', 'https://youtu.be/IR_TBve5VGM', 1, 1),
+(59, 'Kit Target Mini', 'Découvrez le tout nouveau kit box électronique de Vaporesso, le Target Mini.  Composé d\'une petite box électronique Target Mini de 40W et d\'un clearomiseur Guardian de 2ml avec protection anti fuites et remplissage par le haut, il ravira aussi bien les vapoteurs débutants qu\'expérimentés.  Ce petit kit ultra simple mais puissant vous etonnera par ses capacités et sa qualité de vape. Un indispensable !', 'kittargetmini.jpg', 'kittargetmini_shema.jpg', 'https://youtu.be/IR_TBve5VGM', 1, 1),
 (60, 'Kit G-priv', 'Le kit G-PRIV TFV8 Big Baby Smok est un kit de cigarette électronique composé d\'une box à écran tactile G-PRIV 220W Smok ainsi que d\'un clearomiseur hautes performances TFV8 Big Baby Smok. Un kit très innovant et performant de dernère génération ! Alimentée par 2 accus 18650 (non fournis) la box G-PRIV développe une puissance de 220W et propose le contrôle de température (Ni / Ti / SS) ainsi que le mode TCR.  Le kit de cigarette électronique SMOK G-PRIV TFV8 est livré sans accus. Nous vous conseillons d\'utiliser des accus avec plus de 25A de décharge continue.', 'kitgpriv.jpg', 'kitgpriv_schema.jpg', '', 2, 1),
 (61, 'Kit iStick 40W', 'Le kit GS Tank du fabriquant ELEAF est un clearomiseur polyvalent de 22 mm de diamètre, doté d\'un réservoir en pyrex de 3 ml et d\'un airflow (flux d\'air réglable). Il est livré avec 2 résistances en Nickel de 0.15 ohm conçues spécialement pour fonctionner en mode contrôle de température. Cette fonction permet de régler la température de chauffe de la résistance et aide à la conservation de la mèche , pour ne pas la brûler.', 'istick40.jpg', 'istick40_schema.jpg', 'https://www.youtube.com/watch?v=GSoKpHV7jew', 2, 1),
 (62, 'Kit iStick Powernano', 'Version miniature de la iPower, le kit iStick Power Nano est une cigarette électronique complète, offrant des performances et des fonctionnalités avancées dans un format très peu encombrant.  Combinant une box à accumulateur intégré de 1100 mAh avec un réservoir 2ml, l\'ensemble propose plusieurs styles de vape pour un rendu souple et adaptable selon vos envies. Le système est capable d\'atteindre une puisssance de 40W (redoutable pour sa taille) et permet d\'apprécier de beaux nuages de vapeur ou, au contraire, d\'adopter un style discret.  Comme a l\'accoutumée chez Eleaf, la iPower Nano a été pensée pour une prise en main très intuitive. Ce modèle se paramètre donc en toute simplicité et s\'adresse aux vapoteurs de tous niveaux.', 'istickpowernano.jpg', 'istickpowernano_schema.png', 'https://www.youtube.com/watch?v=VTdNcA34_zw', 2, 1),
@@ -95,20 +95,13 @@ CREATE TABLE `comment` (
 --
 
 INSERT INTO `comment` (`id`, `author`, `content`, `date`, `article_id`, `users_id`) VALUES
-(1, 'tristan', 'gu&ccedil;huiuhiui!', '2017-01-30 09:34:45', 75, 4),
-(2, 'tristan', '&ccedil;_y_&agrave;u&ccedil;&agrave;u&ccedil;&agrave;u&ccedil;&ccedil;&agrave;u&agrave;!', '2017-01-30 10:06:49', 59, 4),
-(3, 'tristan', 'jaime la bite\r\n&nbsp;', '2017-01-30 10:15:10', 59, 4),
-(4, 'tristanpar', 'c la kit target mini', '2017-01-30 11:23:27', 59, 5),
-(5, 'tristanpar', 'c\'est la istick basic', '2017-01-30 11:23:56', 58, 5),
-(6, 'tristanpar', 'c\'est la kit target pro', '2017-01-30 11:43:18', 63, 5),
-(7, 'tristanpar', 'c\'est la kit g priv', '2017-01-30 11:47:34', 60, 5),
-(8, 'tristanpar', 'c\'est le noix de coco', '2017-01-30 11:58:11', 86, 5),
-(9, 'tristanpar', 'c\'est la femme &agrave; barbe', '2017-01-30 12:00:42', 79, 5),
-(10, 'popo', 'c\'est le classic', '2017-01-30 12:10:25', 74, 3),
-(11, 'tristan', 'ihuhuh!', '2017-01-30 16:25:43', 59, 4),
-(12, 'tristan', 'jhi&agrave;opop!', '2017-01-30 17:26:37', 75, 4),
-(13, 'popo', 'coucou', '2017-01-31 11:25:44', 59, 3),
-(14, 'popo', 'ijiojijijip!', '2017-01-31 11:28:51', 59, 3);
+(3, 'user', 'Produit d\'excellente qualit&eacute; a recommander!', '2017-01-31 12:26:22', 57, 5),
+(4, 'user', 'Je m\'attendais a mieux!', '2017-01-31 12:26:53', 62, 5),
+(5, 'user', 'Un produit tr&egrave;s haut de gamme!', '2017-01-31 12:27:18', 64, 5),
+(6, 'user', 'Rafraichissant!!', '2017-01-31 12:29:05', 69, 5),
+(7, 'user', 'Dieu est un fumeur de havane!', '2017-01-31 12:29:46', 75, 5),
+(8, 'user', 'Un delicieux goût de barbapapa!', '2017-01-31 12:35:03', 79, 5),
+(9, 'user', 'Un vrai go&ucirc;t de paradis!\r\nVous aurez l\'impression de partir en vacances!', '2017-01-31 12:38:38', 86, 5);
 
 -- --------------------------------------------------------
 
@@ -153,12 +146,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`) VALUES
-(1, 'tokjiji', 'u_hguyhuyhççu', '48748854894', 'user'),
-(2, 'tontonyolo', 'tontonyolo@gmail.com', '$2y$10$yLY.1iWHg86wg2ix0qL0.uGqgHJvISNqfwQgzfBQ76o5/BYHej.xe', 'user'),
-(3, 'popo', 'popo@popo.con', '$2y$10$YKSF9FtqjlKgxLC.ZEB/GupznMeDzTWvsivqg2NmfB1/I/AFAH9Mu', 'admin'),
-(4, 'tristan', 'tpar@gmail.com', '$2y$10$wKs5F9fBvDPj.58gJsgQ0OHFGhp2nICkidicyakZtoevfvVtYbfc6', 'user'),
-(5, 'tristanpar', 'tristanpar@gmail.com', '$2y$10$jORuNmTXjmCoGFMS6ca8dekAzZxv0uX4L6J/KeOF98lpKXX.PkErC', 'user'),
-(6, 'tristpar', 'tristpar@gmail.com', '$2y$10$.XJHTQhg/fl9OhxMbaDpfu7sjUxuroJQHnAptZs34EKQ8/ofDql7C', 'user');
+(4, 'admin', 'admin@vapncode.com', '$2y$10$PcDqL0hbl7FVPJl8VqYknOIZJ/krUhwbQeOrY8kdzJu/JcaJ.KUDO', 'admin'),
+(5, 'user', 'user@vnc.com', '$2y$10$mCAAyCG24Yss8HuOONCK9et7KpI9uvIf/q9hHyczqiksKKgiERX6W', 'user');
 
 --
 -- Index pour les tables exportées
@@ -204,7 +193,7 @@ ALTER TABLE `article`
 -- AUTO_INCREMENT pour la table `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT pour la table `type`
 --
@@ -214,7 +203,7 @@ ALTER TABLE `type`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- Contraintes pour les tables exportées
 --
