@@ -90,8 +90,8 @@ class AdminController extends Controller
         if (isset($_POST['myUserUpdate']))
         {
             if ($result) {
-                $homeUser = new UserController();
-                $homeUser->myHome();
+                $msg = "Modification(s) faite(s)";
+                $this->show('default/home', ['success' => $msg]);
             } else {
                 $this->show('w_errors/404');
             }

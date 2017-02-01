@@ -10,29 +10,33 @@ if (isset($_SESSION['user'])) {
     <h2>Mon Compte</h2>
     <p>Bonjour <?php echo $_SESSION['user']['username'] ?>, vous pouvez modifer vos données içi</p>
 
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Pseudo</th>
-            <th>Mot de passe</th>
-            <th>Email</th>
-            <th>Mise à jour</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <form id="updateUser" action="<?= $this->url('update_user') ?>" method="post">
-                <td><?php echo $listeUser['username']?></td>
-                <td><input type="text" name="password" form="updateUser" value=""></td>
-                <td><input type="email" name="email" form="updateUser" value="<?php echo $listeUser['email']?>"></td>
-                <td>
-                    <input type="hidden" form="updateUser" name="userId" value="<?php echo $listeUser['id'] ?>">
-                    <button type="submit" form="updateUser" name="myUserUpdate" class="btn btn-warning"><i class="fa fa-edit"></i></button>
-                </td>
-            </form>
-        </tr>
-        </tbody>
-    </table>
+    <div class="container addarticleadmin">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-5">
+                <form id="addarticleadmin" class="form-login" action="<?= $this->url('update_user') ?>" method="post">
+                    <h4>Vos information</h4>
+
+                    <p>Votre email :
+                    <input type="email" name="myEmail" form="addarticleadmin" value="<?php echo $listeUser['email']?>" disabled>
+                    </p>
+                    <p>Nouveau email :
+                        <input type="email" name="email" form="addarticleadmin" value="">
+                    </p>
+                    <p>Nouveau mot de passe :
+                        <input type="text" name="password" form="addarticleadmin" value="">
+                    </p>
+
+                    <input type="hidden" form="addarticleadmin" name="userId" value="<?php echo $listeUser['id'] ?>">
+                    <div class="wrapper">
+                    <span class="group-btn">
+                        <button class="btn btn-primary btn-md" type="submit" name="myUserUpdate">Modifier <i class="fa fa-edit"></i></button>
+                        <!--<a href="<?/*= $this->url('user_loginSubmit') */?>" name="subLogin" class="btn btn-primary btn-md">Valider<i class="fa fa-sign-in"></i></a>-->
+                    </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <?php $this->stop('main_content');
 } else {
     echo "Erreur 404.";
